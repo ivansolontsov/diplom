@@ -10,4 +10,5 @@
 
 .header__navigation-link:hover {
     transform: translateY(-4px);
+    color: #fff;
 }

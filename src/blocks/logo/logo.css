@@ -5,4 +5,9 @@
     line-height: 24px;
     font-family: RobotoSlab, Arial, Helvetica, sans-serif;
     color: #fff;
+    transition: transform 1s;
+}
+
+.logo:hover {
+    transform: translateY(-4px);
 }
