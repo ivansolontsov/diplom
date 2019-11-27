@@ -1,0 +1,12 @@
+.header__navigation-list-item {
+    margin-left: 33px;
+    display: flex;
+    align-items: center;
+    height: 69px;
+    text-align: center; 
+    padding: 0px 0px 0px 0px;
+}
+
+.header__navigation-list-item_active {
+    border-bottom: 2px solid white;
+}

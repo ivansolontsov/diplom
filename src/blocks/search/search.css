@@ -1,0 +1,15 @@
+@import url('./__title/search__title.css');
+@import url('./__subtitle/search__subtitle.css');
+@import url('./__wrapper/search__wrapper.css');
+
+
+
+.search {
+    max-width: 1440px;
+    min-height: 576px;
+    background-image: url('../../images/search__background.png'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto;
+}

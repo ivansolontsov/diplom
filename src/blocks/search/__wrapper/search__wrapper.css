@@ -1,0 +1,8 @@
+.search__wrapper {
+    max-width: 608px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    padding-top: 80px;
+}

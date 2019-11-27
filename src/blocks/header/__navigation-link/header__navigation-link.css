@@ -1,0 +1,13 @@
+.header__navigation-link {
+    text-decoration: none;
+    color: #b6bcbf;
+    transition: transform 1s;
+}
+
+.header__navigation-link_active {
+    color: #fff;
+}
+
+.header__navigation-link:hover {
+    transform: translateY(-4px);
+}
