@@ -33,8 +33,8 @@ module.exports = {
                   {
                     loader: 'image-webpack-loader',
                     options: {
-                      bypassOnDebug: true, 
-                      disable: true, 
+                      bypassOnDebug: true,
+                      disable: true,
                     },
                   },
                 ],
@@ -46,32 +46,44 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({ 
+        new HtmlWebpackPlugin({
             inject: false,
             template: './src/index.html',
             filename: 'index.html'
         }),
-        new HtmlWebpackPlugin({ 
+        new HtmlWebpackPlugin({
             template: './src/about.html',
             filename: 'about.html'
         }),
-        new HtmlWebpackPlugin({ 
+        new HtmlWebpackPlugin({
             template: './src/paper.html',
             filename: 'paper.html'
         }),
         new FaviconsWebpackPlugin({
             logo: './src/images/index__favicon.svg',
-            inject: htmlPlugin => 
+            mode: 'webapp',
+            publicPath: './assets',
+            outputPath: './assets/index',
+            prefix: 'index/',
+            inject: htmlPlugin =>
               basename(htmlPlugin.options.filename) === 'index.html',
         }),
         new FaviconsWebpackPlugin({
             logo: './src/images/index__favicon.svg',
-            inject: htmlPlugin => 
+            mode: 'webapp',
+            publicPath: './assets',
+            outputPath: './assets/index',
+            prefix: 'index/',
+            inject: htmlPlugin =>
               basename(htmlPlugin.options.filename) === 'about.html',
         }),
         new FaviconsWebpackPlugin({
             logo: './src/images/paper__favicon.svg',
-            inject: htmlPlugin => 
+            mode: 'webapp',
+            publicPath: './assets',
+            outputPath: './assets/paper',
+            prefix: 'paper/',
+            inject: htmlPlugin =>
               basename(htmlPlugin.options.filename) === 'paper.html',
         }),
         new MiniCssExtractPlugin({
@@ -90,5 +102,5 @@ module.exports = {
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
        })
     ]
- 
+
 }
