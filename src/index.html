@@ -32,6 +32,20 @@
     </form>
     </div>
   </div>
+  <div class="result result_is-opened">
+    <div class="result__progress" style="display:none">
+        <i class="result__preloader"></i>
+        <p class="reslut__progress-text">
+          Идёт поиск новостей...
+        </p>
+    </div>
+    <div class="result__not-found">
+      <img src="<%=require('./images/notfound.svg')%>" alt="Ничего не найдено" class="result__not-found-image">
+      <h3 class="result__not-found-title">Ничего не найдено</h3>
+      <h4 class="result__not-found-subtitle">К сожалению по вашему запросу
+          ничего не найдено.</h4>
+    </div>
+  </div>
   <div class="about-author">
     <img src="<%=require('./images/avatar.png')%>" alt="Аватар Ивана Солонцова" class="about-author__image">
     <div class="about-author__wrapper">

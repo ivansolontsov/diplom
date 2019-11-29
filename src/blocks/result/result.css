@@ -1,0 +1,13 @@
+@import url('./__preloader/result__preloader.css');
+@import url('./__progress-text/result__progress-text.css');
+@import url('./__progress/result__progress.css');
+@import url('./_is-opened/result_is-opened.css');
+@import url('./__not-found/result__not-found.css');
+@import url('./__not-found-image/result__not-found-image.css');
+@import url('./__not-found-title/result__not-found-title.css');
+@import url('./__not-found-subtitle/result__not-found-subtitle.css');
+
+.result {
+  background-color: #f5f6f7;
+  display: none;
+}

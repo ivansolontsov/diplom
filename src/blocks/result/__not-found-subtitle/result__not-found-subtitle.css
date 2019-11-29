@@ -1,0 +1,12 @@
+.result__not-found-subtitle {
+  max-width: 350px;
+  padding: 17px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #b6bcbf;
+  letter-spacing: .2px;
+}
