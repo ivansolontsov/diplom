@@ -1,67 +1,15 @@
 @import url('./__title/search__title.css');
 @import url('./__subtitle/search__subtitle.css');
 @import url('./__wrapper/search__wrapper.css');
+@import url('./__form/search__form.css');
+@import url('./__input/search__input.css');
+@import url('./__button/search__button.css');
 
-
-
-.search__form {
-    position: relative;
-    margin-top: 63px;
-}
-
-.search__input {
-    width: 80%;
-    height: 62px;
-    border-radius: 40px;
-    border: 0px;
-    outline: none;  
-    padding-left: 24px;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    color: #1a1b22;
-    transition: box-shadow 1s;
-}
-
-.search__input::placeholder {
-    color: #b6bcbf;
-}
-
-.search__input:focus {
-    box-shadow: inset 0px 0px 6px 2px #2e70e552;
-}
-
-.search__button {
-    position: absolute;
-    top: 0px;
-    right: -2px;
-    border-radius: 40px;
-    border: 0px;
-    background-color: #2f71e5;
-    font-family: roboto, Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-    width: 168px;
-    height: 64px;
-    outline: none;
-}
-
-.search__button:hover {
-    transition: background-color 0.5s;
-    background-color: #3473ff;
-    cursor: pointer;    
-}
-
-.search__button:active {
-    transition: background-color 0.5s;
-    background-color: #2a65cc;
-}
 
 .search {
-    max-width: 1440px;
+    max-width: 100%;
     min-height: 576px;
-    background-image: url('../../images/search__background.png'); 
+    background-image: url('../../images/search__background.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

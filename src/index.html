@@ -23,7 +23,7 @@
       <h1 class="search__title">
         Что в мире творится?
       </h1>
-      <h2 class="search__subtitle">
+      <h3 class="search__subtitle">
         Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.
       </h2>
       <form class="search__form" name="search">
@@ -33,9 +33,30 @@
     </div>
   </div>
   <div class="about-author">
+    <img src="<%=require('./images/avatar.png')%>" alt="Аватар Ивана Солонцова" class="about-author__image">
+    <div class="about-author__wrapper">
+      <h2 class="about-author__title">Об авторе</h2>
+      <p class="about-author__text">
+          Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+      </p>
+      <p class="about-author__text">
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+      </p>
+    </div>
   </div>
   <footer class="footer">
-
+    <small class="footer__copyright">© 2019  Supersite</small>
+    <nav>
+      <ul class="footer__nav">
+        <li class="footer__nav-item"><a href="/index.html" class="footer__nav-item-link">Главная</a></li>
+        <li class="footer__nav-item"><a href="/about.html" class="footer__nav-item-link">О проекте</a></li>
+        <li class="footer__nav-item"><a href="https://praktikum.yandex.ru/profile/web-developer/" target="_blank" class="footer__nav-item-link">Яндекс.Практикум</a></li>
+      </ul>
+    </nav>
+    <div class="footer__social">
+      <a href="https://github.com/ivansolontsov" target="_blank"><img src="<%=require('./images/git.svg')%>" alt="Логотип GitHub" class="footer__social-icon"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="<%=require('./images/fb.svg')%>" alt="Логотип Facebook" class="footer__social-icon"></a>
+    </div>
   </footer>
 </main>
 </body>

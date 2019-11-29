@@ -1,0 +1,26 @@
+.search__button {
+  position: absolute;
+  top: 0px;
+  right: -2px;
+  border-radius: 40px;
+  border: 0px;
+  background-color: #2f71e5;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  width: 168px;
+  height: 64px;
+  outline: none;
+}
+
+.search__button:hover {
+  transition: background-color 0.5s;
+  background-color: #3473ff;
+  cursor: pointer;
+}
+
+.search__button:active {
+  transition: background-color 0.5s;
+  background-color: #2a65cc;
+}
