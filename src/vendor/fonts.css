@@ -19,3 +19,11 @@
   font-weight: 400;
   src: url("./fonts/robotoslab-regular-webfont.woff") format("woff");
 }
+
+
+@font-face {
+  font-family: 'SourceSansPro';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("./fonts/sourcesanspro.woff") format("woff");
+}
