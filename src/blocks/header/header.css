@@ -3,7 +3,6 @@
 @import url('./__navigation-list-item/header__navigation-list-item.css');
 @import url('./__navigation-link/header__navigation-link.css');
 
-
 .header {
     min-height: 72px;
     display: flex;

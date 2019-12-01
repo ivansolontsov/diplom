@@ -3,10 +3,14 @@
     display: flex;
     align-items: center;
     height: 69px;
-    text-align: center; 
+    text-align: center;
     padding: 0px 0px 0px 0px;
 }
 
 .header__navigation-list-item_active {
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
+}
+
+.header__navigation-list-item_active_black {
+  border-bottom: 3px solid #1a1b22;
 }

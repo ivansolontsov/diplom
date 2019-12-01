@@ -1,10 +1,10 @@
 @import url('./__link/logo__link.css');
+@import url('./__link_black/logo__link_black.css');
 
 .logo {
     font-size: 20px;
     line-height: 24px;
     font-family: RobotoSlab, Arial, Helvetica, sans-serif;
-    color: #fff;
     transition: transform 1s;
 }
 
