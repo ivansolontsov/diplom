@@ -1,0 +1,6 @@
+.git__author-name-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px 0px 0px 16px;
+}

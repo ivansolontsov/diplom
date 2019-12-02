@@ -1,0 +1,7 @@
+.git__commit-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding-top: 19px;
+}

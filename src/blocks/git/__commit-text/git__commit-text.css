@@ -1,0 +1,9 @@
+
+
+.git__commit-text {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  max-width: 352px;
+  font-size: 16px;
+  line-height: 1.4rem;
+  color: #1a1b22;
+}
