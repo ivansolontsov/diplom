@@ -1,0 +1,8 @@
+.tech__wrapper {
+  max-width: 1232px;
+  margin: auto;
+  padding: 80px 104px 90px 104px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}

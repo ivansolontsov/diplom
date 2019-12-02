@@ -1,0 +1,10 @@
+.git__title-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 7px 0px 8px;
+  max-width: 1232px;
+  margin: auto;
+}

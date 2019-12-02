@@ -1,0 +1,9 @@
+.tech__list-item {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  margin-right: 42px;
+}

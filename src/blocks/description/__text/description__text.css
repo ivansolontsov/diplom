@@ -1,0 +1,9 @@
+.description__text {
+  margin: 0;
+  padding: 24px 0px 0px 0px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  max-width: 815px;
+  font-size: 18px;
+  line-height: 1.5rem;
+  color: #1a1b22;
+}

@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Index</title>
+  <title>О проекте</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="stylesheet" href="../node_modules/swiper/css/swiper.min.css">
 </head>
 <body>
 <div class="root">
@@ -45,6 +46,243 @@
         мы рекомендуем обратиться к этому студенту.
     </p>
   </section>
+  <section class="tech">
+    <div class="tech__wrapper">
+        <h2 class="tech__title">Используемые технологии</h2>
+        <ul class="tech__list">
+          <li class="tech__list-item">
+            HTML
+            <img src="<%=require('./images/html.svg')%>" alt="HTML3 Logo" class="tech__list-image">
+          </li>
+          <li class="tech__list-item">
+            CSS
+            <img src="<%=require('./images/css.svg')%>" alt="CSS5 Logo" class="tech__list-image">
+          </li>
+          <li class="tech__list-item">
+            Java Script
+            <img src="<%=require('./images/js.svg')%>" alt="Java Script Logo" class="tech__list-image">
+          </li>
+          <li class="tech__list-item">
+            Webpack
+            <img src="<%=require('./images/webpack.svg')%>" alt="WebPack Logo" class="tech__list-image">
+          </li>
+      </ul>
+    </div>
+  </section>
+  <section class="about-author">
+    <img src="<%=require('./images/avatar.png')%>" alt="Аватар Ивана Солонцова" class="about-author__image">
+    <div class="about-author__wrapper">
+      <h2 class="about-author__title">Об авторе</h2>
+      <p class="about-author__text">
+        Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+      </p>
+      <p class="about-author__text">
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+      </p>
+    </div>
+  </section>
+  <section class="git">
+    <div class="git__title-wrapper">
+      <h2 class="git__title">История коммитов из GitHub</h2>
+      <a href='https://github.com/ivansolontsov/diplom' class='git__link'>Открыть в GitHub <img src="<%=require('./images/arrow.svg')%>" alt="Открыть в GitHub" class="git__link-arrow"></a>
+    </div>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="git__commit">
+            <time datetime="2019-08-14" class="git__commit-date">14 августа, 2019</time>
+            <div class="git__commit-info">
+              <img src="<%=require('./images/gitavatar.jpg')%>" alt="Мария Федорова" class="git__author-avatar">
+              <div class="git__author-name-wrapper">
+                <h3 class="git__author-name">Мария Фёдорова</h3>
+                <a href="mailto:mariiifed@yandex.ru" class="git__author-email">mariiifed@yandex.ru</a>
+              </div>
+            </div>
+            <p class="git__commit-text">
+              You can install this plugin directly
+              from NetBeans Plugin Portal: in
+              NetBeans, open   Tools >
+              Plugins > Available plugins
+              and find and install Emmet plugin.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="git__commit">
+            <time datetime="2019-08-14" class="git__commit-date">14 августа, 2019</time>
+            <div class="git__commit-info">
+              <img src="<%=require('./images/gitavatar.jpg')%>" alt="Мария Федорова" class="git__author-avatar">
+              <div class="git__author-name-wrapper">
+                <h3 class="git__author-name">Мария Фёдорова</h3>
+                <a href="mailto:mariiifed@yandex.ru" class="git__author-email">mariiifed@yandex.ru</a>
+              </div>
+            </div>
+            <p class="git__commit-text">
+              You can install this plugin directly
+              from NetBeans Plugin Portal: in
+              NetBeans, open   Tools >
+              Plugins > Available plugins
+              and find and install Emmet plugin.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="git__commit">
+            <time datetime="2019-08-14" class="git__commit-date">14 августа, 2019</time>
+            <div class="git__commit-info">
+              <img src="<%=require('./images/gitavatar.jpg')%>" alt="Мария Федорова" class="git__author-avatar">
+              <div class="git__author-name-wrapper">
+                <h3 class="git__author-name">Мария Фёдорова</h3>
+                <a href="mailto:mariiifed@yandex.ru" class="git__author-email">mariiifed@yandex.ru</a>
+              </div>
+            </div>
+            <p class="git__commit-text">
+              You can install this plugin directly
+              from NetBeans Plugin Portal: in
+              NetBeans, open   Tools >
+              Plugins > Available plugins
+              and find and install Emmet plugin.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="git__commit">
+            <time datetime="2019-08-14" class="git__commit-date">14 августа, 2019</time>
+            <div class="git__commit-info">
+              <img src="<%=require('./images/gitavatar.jpg')%>" alt="Мария Федорова" class="git__author-avatar">
+              <div class="git__author-name-wrapper">
+                <h3 class="git__author-name">Мария Фёдорова</h3>
+                <a href="mailto:mariiifed@yandex.ru" class="git__author-email">mariiifed@yandex.ru</a>
+              </div>
+            </div>
+            <p class="git__commit-text">
+              You can install this plugin directly
+              from NetBeans Plugin Portal: in
+              NetBeans, open   Tools >
+              Plugins > Available plugins
+              and find and install Emmet plugin.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="git__commit">
+            <time datetime="2019-08-14" class="git__commit-date">14 августа, 2019</time>
+            <div class="git__commit-info">
+              <img src="<%=require('./images/gitavatar.jpg')%>" alt="Мария Федорова" class="git__author-avatar">
+              <div class="git__author-name-wrapper">
+                <h3 class="git__author-name">Мария Фёдорова</h3>
+                <a href="mailto:mariiifed@yandex.ru" class="git__author-email">mariiifed@yandex.ru</a>
+              </div>
+            </div>
+            <p class="git__commit-text">
+              You can install this plugin directly
+              from NetBeans Plugin Portal: in
+              NetBeans, open   Tools >
+              Plugins > Available plugins
+              and find and install Emmet plugin.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="git__commit">
+            <time datetime="2019-08-14" class="git__commit-date">14 августа, 2019</time>
+            <div class="git__commit-info">
+              <img src="<%=require('./images/gitavatar.jpg')%>" alt="Мария Федорова" class="git__author-avatar">
+              <div class="git__author-name-wrapper">
+                <h3 class="git__author-name">Мария Фёдорова</h3>
+                <a href="mailto:mariiifed@yandex.ru" class="git__author-email">mariiifed@yandex.ru</a>
+              </div>
+            </div>
+            <p class="git__commit-text">
+              You can install this plugin directly
+              from NetBeans Plugin Portal: in
+              NetBeans, open   Tools >
+              Plugins > Available plugins
+              and find and install Emmet plugin.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="git__commit">
+            <time datetime="2019-08-14" class="git__commit-date">14 августа, 2019</time>
+            <div class="git__commit-info">
+              <img src="<%=require('./images/gitavatar.jpg')%>" alt="Мария Федорова" class="git__author-avatar">
+              <div class="git__author-name-wrapper">
+                <h3 class="git__author-name">Мария Фёдорова</h3>
+                <a href="mailto:mariiifed@yandex.ru" class="git__author-email">mariiifed@yandex.ru</a>
+              </div>
+            </div>
+            <p class="git__commit-text">
+              You can install this plugin directly
+              from NetBeans Plugin Portal: in
+              NetBeans, open   Tools >
+              Plugins > Available plugins
+              and find and install Emmet plugin.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="git__commit">
+            <time datetime="2019-08-14" class="git__commit-date">14 августа, 2019</time>
+            <div class="git__commit-info">
+              <img src="<%=require('./images/gitavatar.jpg')%>" alt="Мария Федорова" class="git__author-avatar">
+              <div class="git__author-name-wrapper">
+                <h3 class="git__author-name">Мария Фёдорова</h3>
+                <a href="mailto:mariiifed@yandex.ru" class="git__author-email">mariiifed@yandex.ru</a>
+              </div>
+            </div>
+            <p class="git__commit-text">
+              You can install this plugin directly
+              from NetBeans Plugin Portal: in
+              NetBeans, open   Tools >
+              Plugins > Available plugins
+              and find and install Emmet plugin.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="git__commit">
+            <time datetime="2019-08-14" class="git__commit-date">14 августа, 2019</time>
+            <div class="git__commit-info">
+              <img src="<%=require('./images/gitavatar.jpg')%>" alt="Мария Федорова" class="git__author-avatar">
+              <div class="git__author-name-wrapper">
+                <h3 class="git__author-name">Мария Фёдорова</h3>
+                <a href="mailto:mariiifed@yandex.ru" class="git__author-email">mariiifed@yandex.ru</a>
+              </div>
+            </div>
+            <p class="git__commit-text">
+              You can install this plugin directly
+              from NetBeans Plugin Portal: in
+              NetBeans, open   Tools >
+              Plugins > Available plugins
+              and find and install Emmet plugin.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev my-button-prev"></div>
+      <div class="swiper-button-next my-button-next"></div>
+    </div>
+
+  </section>
+  <footer class="footer">
+      <small class="footer__copyright">© 2019  Supersite</small>
+      <nav>
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a href="/index.html" class="footer__nav-item-link">Главная</a></li>
+          <li class="footer__nav-item"><a href="/about.html" class="footer__nav-item-link">О проекте</a></li>
+          <li class="footer__nav-item"><a href="https://praktikum.yandex.ru/profile/web-developer/" target="_blank" class="footer__nav-item-link">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <a href="https://github.com/ivansolontsov" target="_blank"><img src="<%=require('./images/git.svg')%>" alt="Логотип GitHub" class="footer__social-icon"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="<%=require('./images/fb.svg')%>" alt="Логотип Facebook" class="footer__social-icon"></a>
+      </div>
+  </footer>
 </div>
 </body>
 <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>

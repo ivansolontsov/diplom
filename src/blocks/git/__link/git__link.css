@@ -1,0 +1,18 @@
+.git__link {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: #1a1b22;
+  transition: transform 0.5s;
+}
+
+.git__link:hover {
+  transform: translateX(5px);
+}

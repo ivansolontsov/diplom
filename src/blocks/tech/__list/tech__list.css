@@ -1,0 +1,9 @@
+.tech__list {
+  padding: 17px 0px 0px 216px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
