@@ -1,0 +1,9 @@
+@import url('./__numbers/request__numbers.css');
+@import url('./__subtitle/request__subtitle.css');
+@import url('./__title/request__title.css');
+
+.request {
+  max-width: 1232px;
+  margin: auto;
+  padding: 84px 104px 75px 104px;
+}

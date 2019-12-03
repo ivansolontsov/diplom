@@ -4,10 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Paper</title>
+  <title>Аналитика</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 <body>
+<div class="root">
+  <header class="header">
+    <div class="logo"><a href="/index.html" class="logo__link logo__link_black">NewsAnalyzer</a></div>
+      <nav class="header__navigation">
+        <ul class="header__navigation-list">
+          <li class="header__navigation-list-item"><a href='index.html' class="header__navigation-link header__navigation-link_paper">Главная</a></li>
+          <li class="header__navigation-list-item"><a href='about.html' class="header__navigation-link header__navigation-link_paper">О проекте</a></li>
+        </ul>
+      </nav>
+  </header>
+  <section class="breadcumbs">
+      <a href="/index.html" class="breadcumbs__link">Главная</a><span class="breadcumbs__link">Аналитика</span>
+  </section>
+  <section class="request">
+    <h1 class="request__title">Вы спросили: «Путешествия»</h1>
+    <h3 class="request__subtitle">Новостей за неделю: <span class="request__numbers">34 324</span></h3>
+    <h3 class="request__subtitle">Упоминаний в загаловках: <span class="request__numbers">235</span></h3>
+  </section>
+  <section class="analytics">
+    <h2 class="analytics__title">Аналитика по дням</h2>
+  </section>
+  <footer class="footer">
+      <small class="footer__copyright">© 2019  Supersite</small>
+      <nav>
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a href="/index.html" class="footer__nav-item-link">Главная</a></li>
+          <li class="footer__nav-item"><a href="/about.html" class="footer__nav-item-link">О проекте</a></li>
+          <li class="footer__nav-item"><a href="https://praktikum.yandex.ru/profile/web-developer/" target="_blank" class="footer__nav-item-link">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <a href="https://github.com/ivansolontsov" target="_blank"><img src="<%=require('./images/git.svg')%>" alt="Логотип GitHub" class="footer__social-icon"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="<%=require('./images/fb.svg')%>" alt="Логотип Facebook" class="footer__social-icon"></a>
+      </div>
+  </footer>
+</div>
 </body>
 <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </html>

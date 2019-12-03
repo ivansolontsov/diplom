@@ -1,0 +1,19 @@
+.breadcumbs__link {
+  font-family: Roboto;
+  font-size: 18px;
+  color: #b6bcbf;
+  text-decoration: none;
+  transition: opacity .5s;
+}
+
+.breadcumbs__link:first-child {
+  color: #1a1b22;
+}
+
+.breadcumbs__link:first-child:hover {
+  opacity: .5;
+}
+
+.breadcumbs__link:first-child::after {
+  content: " / "
+}

@@ -1,12 +1,11 @@
 import Swiper from 'swiper';
 
 let mySwiper = new Swiper ('.swiper-container', {
-  // Optional parameters
   direction: 'horizontal',
   loop: false,
   slidesPerView: '3',
   spaceBetween: 50,
-  // centeredSlides: true,
+  simulateTouch: false,
   slidesOffsetBefore: 120,
   width: 1200,
   pagination: {
@@ -17,7 +16,6 @@ let mySwiper = new Swiper ('.swiper-container', {
       return '<span class="' + className + '" style="background-color: #1a1b22"></span>';
     },
   },
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

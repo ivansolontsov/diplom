@@ -6,4 +6,10 @@
   padding: 24px;
   box-shadow: 0px 7px 50px #00000015;
   overflow: hidden;
+  transition: opacity .5s;
+}
+
+.git__commit:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
