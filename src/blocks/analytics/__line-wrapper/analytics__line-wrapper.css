@@ -1,0 +1,7 @@
+.analytics__line-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding-bottom: 54px;
+}

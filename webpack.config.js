@@ -9,7 +9,11 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const { basename } = require('path')
 
 module.exports = {
-    entry: { main: './src/index.js' },
+    entry: {
+      main: './src/index.js',
+      about: './src/about.js',
+      paper: './src/paper.js'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'

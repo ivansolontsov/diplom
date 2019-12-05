@@ -2,7 +2,7 @@
     margin-left: 33px;
     display: flex;
     align-items: center;
-    height: 69px;
+    height: 60px;
     text-align: center;
     padding: 0px 0px 0px 0px;
 }
@@ -13,4 +13,12 @@
 
 .header__navigation-list-item_active_black {
   border-bottom: 3px solid #1a1b22;
+}
+
+
+@media screen and (max-width:444px) {
+  .header__navigation-list-item {
+    height: 53px;
+    margin-left: 11px;
+  }
 }

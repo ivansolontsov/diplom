@@ -1,0 +1,17 @@
+.analytics__table-title {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #b6bcbf;
+  max-width: 50px;
+  vertical-align: top;
+  padding-right: 46px;
+  letter-spacing: .36px;
+}
+
+.analytics__table-title:nth-of-type(2) {
+  max-width: 100%;
+}

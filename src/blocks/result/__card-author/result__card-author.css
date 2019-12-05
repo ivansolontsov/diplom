@@ -1,7 +1,7 @@
 .result__card-author {
   position: absolute;
   bottom: 24px;
-  left: 0x;
+  left: 24px;
   font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -10,5 +10,4 @@
   text-transform: uppercase;
   color: #b6bcbf;
   margin: 0;
-  padding: 20px 24px 0px 24px;
 }

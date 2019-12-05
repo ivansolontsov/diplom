@@ -10,3 +10,30 @@
     letter-spacing: 0.168px;
     margin:0px;
 }
+
+
+@media screen and (max-width: 1330px) {
+  .search__subtitle {
+    padding-top: 20px;
+    padding-left: 80px;
+    max-width: 452px;
+  }
+}
+
+@media screen and (max-width:610px) {
+  .search__subtitle {
+    padding: 0;
+    padding-top: 16px;
+    max-width: 66vw;
+    margin: auto;
+  }
+}
+
+
+@media screen and (max-width:444px) {
+  .search__subtitle {
+    margin: 0;
+    padding: 19px 17px 0px 15px;
+    max-width: 100%;
+  }
+}

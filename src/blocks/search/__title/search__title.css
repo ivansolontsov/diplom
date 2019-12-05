@@ -8,3 +8,28 @@
     padding: 0px;
     margin: 0px;
 }
+
+@media screen and (max-width: 1330px) {
+  .search__title {
+    padding: 0px 0px 0px 83px;
+    font-size: 36px;
+    max-width: 385px;
+  }
+}
+
+@media screen and (max-width:610px) {
+  .search__title {
+    padding: 0;
+    max-width: 66vw;
+    margin: auto;
+  }
+}
+
+
+@media screen and (max-width:444px) {
+  .search__title {
+    max-width: 100%;
+    margin: 0;
+    padding-left: 19px;
+  }
+}

@@ -1,0 +1,7 @@
+.analytics__range {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 14px 0px 11px 101px;
+}

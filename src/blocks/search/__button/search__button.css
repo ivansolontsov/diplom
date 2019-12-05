@@ -24,3 +24,33 @@
   transition: background-color 0.5s;
   background-color: #2a65cc;
 }
+
+
+@media screen and (max-width: 1330px) {
+  .search__button {
+    width: 160px;
+    height: 56px;
+    right: 76px;
+  }
+}
+
+
+@media screen and (max-width: 701px) {
+  .search__button {
+    position: relative;
+    right: 0;
+    top: 0;
+    display: block;
+    padding: 0;
+    margin: auto;
+    width: calc(80vw + 25px);
+    margin-top: 16px;
+  }
+}
+
+
+@media screen and (max-width: 444px) {
+  .search__button {
+    width: calc(83vw + 25px);
+  }
+}

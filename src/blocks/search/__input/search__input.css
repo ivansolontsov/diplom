@@ -19,3 +19,26 @@
 .search__input:focus {
   box-shadow: inset 0px 0px 6px 2px #2e70e552;
 }
+
+
+@media screen and (max-width: 1330px) {
+  .search__input {
+    height: 54px;
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .search__input {
+    width: 80vw;
+  }
+}
+
+
+@media screen and (max-width: 444px) {
+  .search__input {
+    width: 83vw;
+  }
+}

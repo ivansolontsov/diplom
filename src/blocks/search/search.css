@@ -15,3 +15,9 @@
     background-repeat: no-repeat;
     margin: auto;
 }
+
+@media screen and (max-width: 1330px) {
+  .search {
+    min-height: 400px;
+  }
+}

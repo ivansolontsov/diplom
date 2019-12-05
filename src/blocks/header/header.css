@@ -12,3 +12,15 @@
     border-bottom: 1px solid rgba(196, 196, 196, 0.3);
     padding: 7px 104px 0px 104px;
 }
+
+@media screen and (max-width: 1330px) {
+  .header {
+    padding: 0px 42px 0px 42px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .header {
+    padding: 0px 14px 0px 16px;
+  }
+}
