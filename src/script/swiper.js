@@ -3,11 +3,6 @@ import Swiper from 'swiper';
 let mySwiper = new Swiper ('.swiper-container', {
   direction: 'horizontal',
   loop: false,
-  slidesPerView: '3',
-  spaceBetween: 50,
-  simulateTouch: false,
-  slidesOffsetBefore: 120,
-  width: 1200,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
@@ -20,6 +15,29 @@ let mySwiper = new Swiper ('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      simulateTouch: true,
+      slidesOffsetBefore: 16,
+      width: 239,
+      spaceBetween: 500
+    },
+    426: {
+      slidesPerView: 2,
+      spaceBetween: 336,
+      width: 356,
+      simulateTouch: true,
+      slidesOffsetBefore: 40,
+    },
+    1331: {
+      slidesPerView: '3',
+      spaceBetween: 50,
+      slidesOffsetBefore: 120,
+      width: 1200,
+      simulateTouch: false,
+    }
+  }
 });
 
 

@@ -6,3 +6,27 @@
   margin: auto;
   padding: 80px 104px 94px 104px;
 }
+
+
+@media screen and (max-width:1330px) {
+  .description {
+    padding: 32px 40px 55px 40px;
+  }
+  .description__title {
+    font-size: 30px;
+  }
+  .description__text {
+    line-height: 1.7rem;
+    padding: 13px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .description {
+    padding: 20px 16px 45px 16px;
+  }
+  .description__text {
+    line-height: 1.5rem;
+    padding: 20px 0px 0px 0px;
+  }
+}

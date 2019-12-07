@@ -8,3 +8,38 @@
   max-width: 100%;
   background-color: #f5f6f7;
 }
+
+
+@media screen and (max-width: 1330px) {
+  .tech__wrapper {
+    flex-wrap: wrap;
+    padding: 38px 40px 80px 40px;
+  }
+  .tech__list {
+    padding: 41px 0px 0px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tech__list-item {
+    margin: 0px 22px 0px 22px;
+  }
+  .tech__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .tech__wrapper {
+    padding: 32px 16px 80px 16px;
+  }
+  .tech__title {
+    line-height: 2.4rem;
+  }
+  .tech__list {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .tech__list-item {
+    margin: 0px 0px 38px 0px;
+  }
+}

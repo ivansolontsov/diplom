@@ -27,7 +27,7 @@
         Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.
       </h3>
       <form class="search__form" name="search">
-        <input type="text" name="searchinput" class="search__input" placeholder="Введите тему новости">
+        <input type="text" name="searchinput" pattern="Политика" class="search__input" placeholder="Введите тему новости" required>
         <button type="submit" class="search__button">Искать</button>
     </form>
     </div>
@@ -56,68 +56,68 @@
           <!-- для будущего js засунул адрес пикчи в style, не делаю через тег IMG тк если картинки будут разных размеров, пропорции не будут сохраняться. -->
           <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
           <h3 class="result__card-title">Национальное достояние – парки</h3>
-          <article class="result__card-text">
+          <p class="result__card-text">
               В 2016 году Америка отмечала важный юбилей:
               сто лет назад здесь начала складываться
               система национальных парков – охраняемых
               территорий, где и сегодня каждый может приобщиться к природе.
-          </article>
+          </p>
           <small class="result__card-author">Лента.Ру</small>
         </div>
         <div class="result__card">
           <div class="result__card-image" style="background-image: url('<%=require('./images/image_04.png')%>')"></div>
           <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
           <h3 class="result__card-title">Лесные огоньки: история одной фотографии</h3>
-          <article class="result__card-text">
+          <p class="result__card-text">
               Фотограф отвлеклась от освещения суровой
               политической реальности Мексики,
               чтобы запечатлеть ускользающую красоту одного
               из местных чудес природы.
-          </article>
+          </p>
           <small class="result__card-author">Лента.Ру</small>
           </div>
           <div class="result__card">
             <div class="result__card-image" style="background-image: url('<%=require('./images/image_07.png')%>')"></div>
             <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
             <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <article class="result__card-text">
+            <p class="result__card-text">
               Знаменитый фотограф снимает первозданные леса России,
               чтобы рассказать о необходимости их сохранения.
               В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-            </article>
+            </p>
             <small class="result__card-author">РИА</small>
           </div>
           <div class="result__card">
             <div class="result__card-image" style="background-image: url('<%=require('./images/card__image.png')%>')"></div>
             <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
             <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <article class="result__card-text">
+            <p class="result__card-text">
                 Знаменитый фотограф снимает первозданные леса России,
                 чтобы рассказать о необходимости их сохранения.
                 В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-            </article>
+            </p>
             <small class="result__card-author">РИА</small>
           </div>
           <div class="result__card">
               <div class="result__card-image" style="background-image: url('<%=require('./images/image_04.png')%>')"></div>
               <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
               <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-              <article class="result__card-text">
+              <p class="result__card-text">
                 Знаменитый фотограф снимает первозданные леса России,
                 чтобы рассказать о необходимости их сохранения.
                 В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-              </article>
+              </p>
               <small class="result__card-author">РИА</small>
           </div>
           <div class="result__card">
             <div class="result__card-image" style="background-image: url('<%=require('./images/image_07.png')%>')"></div>
             <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
             <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <article class="result__card-text">
+            <p class="result__card-text">
               Знаменитый фотограф снимает первозданные леса России,
               чтобы рассказать о необходимости их сохранения.
               В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-            </article>
+            </p>
             <small class="result__card-author">РИА</small>
           </div>
       </div>

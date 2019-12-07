@@ -79,7 +79,7 @@
     padding-bottom: 22px;
   }
   .footer__nav-item {
-    padding: 0px 12px 38px 32px;
+    padding: 0px 12px 24px 16px;
   }
   .footer__social {
     position: absolute;
@@ -92,6 +92,7 @@
   }
   .footer__copyright {
     order: 4;
+    padding: 17px 0px 0px 16px;
   }
   .footer__nav {
     flex-direction: column;

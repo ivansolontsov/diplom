@@ -17,7 +17,20 @@
 }
 
 .search__input:focus {
-  box-shadow: inset 0px 0px 6px 2px #2e70e552;
+  box-shadow: inset 0px 0px 6px 2px #ffdb4d;
+}
+
+.search__input:valid:not(:placeholder-shown) {
+  box-shadow: inset 0px 0px 6px 2px #ffdb4d;
+}
+
+.search__input:invalid:not(:placeholder-shown) {
+  box-shadow: inset 0px 0px 6px 2px #df4b41;
+
+}
+
+.form__input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
 }
 
 

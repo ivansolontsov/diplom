@@ -1,6 +1,6 @@
 .swiper-container {
   position: relative;
-  width: 1440px;
+  max-width: 1440px;
   padding: 63px 0px 67px 0px;
 }
 
@@ -55,4 +55,33 @@
   right: 0px;
   top: 0px;
   transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 1330px) {
+  .swiper-container {
+    padding: 28px 0px 54px 0px;
+  }
+  .swiper__shadow_left {
+    display: none;
+  }
+  .swiper__shadow_right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 444px) {
+  .swiper-container {
+    padding: 16px 0px 38px 0px;
+  }
 }
