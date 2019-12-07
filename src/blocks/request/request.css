@@ -7,3 +7,26 @@
   margin: auto;
   padding: 84px 104px 75px 104px;
 }
+
+
+@media screen and (max-width: 1330px) {
+  .request {
+    padding: 66px 40px 36px 40px;
+  }
+  .request__title {
+    font-size: 32px;
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 444px) {
+  .request {
+    padding: 19px 16px 34px 16px;
+  }
+  .request__title {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 16px;
+  }
+}
