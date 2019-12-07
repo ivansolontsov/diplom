@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer</title>
-  <link rel="stylesheet" href="style.b9914dc9a88f01422825.css">
+  <link rel="stylesheet" href="style.7df5a83270381c141964.css">
 <link rel="shortcut icon" href="assets/index/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="assets/index/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="assets/index/favicon-32x32.png"><link rel="manifest" href="assets/index/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="diplom"><link rel="apple-touch-icon" sizes="57x57" href="assets/index/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="assets/index/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="assets/index/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="assets/index/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="assets/index/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="assets/index/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="assets/index/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="assets/index/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="assets/index/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="assets/index/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="assets/index/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="diplom"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="assets/index/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="assets/index/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="assets/index/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="assets/index/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="assets/index/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="assets/index/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="assets/index/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="assets/index/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="assets/index/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="assets/index/apple-touch-startup-image-1536x2008.png"><link rel="icon" type="image/png" sizes="228x228" href="assets/index/coast-228x228.png"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="assets/index/mstile-144x144.png"><meta name="msapplication-config" content="assets/index/browserconfig.xml"><link rel="yandex-tableau-widget" href="assets/index/yandex-browser-manifest.json"></head>
 <body>
 <main class="root">
@@ -27,7 +27,7 @@
         Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.
       </h3>
       <form class="search__form" name="search">
-        <input type="text" name="searchinput" class="search__input" placeholder="Введите тему новости">
+        <input type="text" name="searchinput" pattern="Политика" class="search__input" placeholder="Введите тему новости" required>
         <button type="submit" class="search__button">Искать</button>
     </form>
     </div>
@@ -56,68 +56,68 @@
           <!-- для будущего js засунул адрес пикчи в style, не делаю через тег IMG тк если картинки будут разных размеров, пропорции не будут сохраняться. -->
           <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
           <h3 class="result__card-title">Национальное достояние – парки</h3>
-          <article class="result__card-text">
+          <p class="result__card-text">
               В 2016 году Америка отмечала важный юбилей:
               сто лет назад здесь начала складываться
               система национальных парков – охраняемых
               территорий, где и сегодня каждый может приобщиться к природе.
-          </article>
+          </p>
           <small class="result__card-author">Лента.Ру</small>
         </div>
         <div class="result__card">
           <div class="result__card-image" style="background-image: url('./images/image_04.png')"></div>
           <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
           <h3 class="result__card-title">Лесные огоньки: история одной фотографии</h3>
-          <article class="result__card-text">
+          <p class="result__card-text">
               Фотограф отвлеклась от освещения суровой
               политической реальности Мексики,
               чтобы запечатлеть ускользающую красоту одного
               из местных чудес природы.
-          </article>
+          </p>
           <small class="result__card-author">Лента.Ру</small>
           </div>
           <div class="result__card">
             <div class="result__card-image" style="background-image: url('./images/image_07.png')"></div>
             <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
             <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <article class="result__card-text">
+            <p class="result__card-text">
               Знаменитый фотограф снимает первозданные леса России,
               чтобы рассказать о необходимости их сохранения.
               В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-            </article>
+            </p>
             <small class="result__card-author">РИА</small>
           </div>
           <div class="result__card">
             <div class="result__card-image" style="background-image: url('./images/card__image.png')"></div>
             <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
             <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <article class="result__card-text">
+            <p class="result__card-text">
                 Знаменитый фотограф снимает первозданные леса России,
                 чтобы рассказать о необходимости их сохранения.
                 В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-            </article>
+            </p>
             <small class="result__card-author">РИА</small>
           </div>
           <div class="result__card">
               <div class="result__card-image" style="background-image: url('./images/image_04.png')"></div>
               <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
               <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-              <article class="result__card-text">
+              <p class="result__card-text">
                 Знаменитый фотограф снимает первозданные леса России,
                 чтобы рассказать о необходимости их сохранения.
                 В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-              </article>
+              </p>
               <small class="result__card-author">РИА</small>
           </div>
           <div class="result__card">
             <div class="result__card-image" style="background-image: url('./images/image_07.png')"></div>
             <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
             <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <article class="result__card-text">
+            <p class="result__card-text">
               Знаменитый фотограф снимает первозданные леса России,
               чтобы рассказать о необходимости их сохранения.
               В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-            </article>
+            </p>
             <small class="result__card-author">РИА</small>
           </div>
       </div>
