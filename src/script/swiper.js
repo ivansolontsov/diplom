@@ -20,8 +20,9 @@ let mySwiper = new Swiper ('.swiper-container', {
       slidesPerView: 1,
       simulateTouch: true,
       slidesOffsetBefore: 16,
-      width: 239,
-      spaceBetween: 500
+      width: 240,
+      spaceBetween: 56,
+      centeredSlides: true,
     },
     426: {
       slidesPerView: 2,
@@ -29,6 +30,7 @@ let mySwiper = new Swiper ('.swiper-container', {
       width: 356,
       simulateTouch: true,
       slidesOffsetBefore: 40,
+      centeredSlides: false,
     },
     1331: {
       slidesPerView: '3',
@@ -36,6 +38,7 @@ let mySwiper = new Swiper ('.swiper-container', {
       slidesOffsetBefore: 120,
       width: 1200,
       simulateTouch: false,
+      centeredSlides: false,
     }
   }
 });
