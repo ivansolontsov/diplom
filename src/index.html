@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <meta name="description" content="Веб-приложение для поиска новостей по теме новости, с предоставлением отчета о популярности темы, наглядной диаграммой.">
+  <meta name="author" content="Солонцов Иван Александрович" />
+  <meta name="copyright" lang="ru" content="Проект студента 4-го потока в Яндекс.Практикум" />
 </head>
 <body>
 <main class="root">
@@ -28,7 +31,7 @@
       </h3>
       <form class="search__form" name="search">
         <!-- паттерн просто для наглядности как работают стили для валидации -->
-        <input type="text" name="searchinput" pattern="^[А-яЁё]+(-[А-яЁё]+)?$" minlength="2" maxlength="31" class="search__input" placeholder="Введите тему новости" required>
+        <input type="text" name="searchinput" pattern="^[А-яЁё]+$" minlength="2" maxlength="31" class="search__input" placeholder="Введите тему новости" required>
         <button type="submit" class="search__button">Искать</button>
     </form>
     </div>
