@@ -6,3 +6,10 @@
   padding-top: 43px;
   padding-bottom: 8px;
 }
+
+@media screen and (max-width: 444px) {
+  .analytics__header {
+    padding-top: 17px;
+    padding-bottom: 0px;
+  }
+}

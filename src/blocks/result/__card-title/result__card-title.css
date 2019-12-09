@@ -5,3 +5,15 @@
   margin: 0;
   padding: 15px 24px 0px 24px;
 }
+
+
+@media screen and (max-width: 1330px) {
+  .result__card-title {
+    font-size: 22px;
+    font-weight: 300;
+    padding: 13px 16px 0px 16px;
+    max-height: 75px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

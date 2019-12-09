@@ -1,0 +1,22 @@
+.footer__copyright {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b6bcbf;
+  padding: 5px 0px 0px 13px;
+  letter-spacing: .3px;
+  order: 0;
+}
+
+@media screen and (max-width:900px) {
+  .footer__copyright {
+    padding: 4px 0px 0px 32px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .footer__copyright {
+    order: 4;
+    padding: 17px 0px 0px 16px;
+  }
+}

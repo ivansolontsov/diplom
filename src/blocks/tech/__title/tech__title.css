@@ -7,3 +7,16 @@
   max-width: 344px;
   color: #1a1b22;
 }
+
+@media screen and (max-width: 1330px) {
+
+  .tech__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .tech__title {
+    line-height: 2.4rem;
+  }
+}

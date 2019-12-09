@@ -5,3 +5,12 @@
   justify-content: flex-start;
   padding-bottom: 54px;
 }
+
+@media screen and (max-width: 444px) {
+  .analytics__line-wrapper {
+    padding-bottom: 22px;
+  }
+  .analytics__line-wrapper:nth-of-type(2) {
+    margin-top: 14px;
+  }
+}

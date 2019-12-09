@@ -2,3 +2,20 @@
   width: 464px;
   height: auto;
 }
+
+
+@media screen and (max-width: 1330px) {
+  .about-author__image {
+    width: 232px;
+    height: 232px;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .about-author__image {
+    width: 272px;
+    height: 272px;
+    padding-top: 32px;
+  }
+}

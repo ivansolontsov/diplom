@@ -5,3 +5,9 @@
   margin: 0;
   padding: 22px 24px 0px 24px;
 }
+
+@media screen and (max-width: 1330px) {
+  .result__card-date {
+    padding: 19px 16px 0px 16px;
+  }
+}

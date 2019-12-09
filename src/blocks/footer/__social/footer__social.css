@@ -1,0 +1,18 @@
+.footer__social {
+  order: 2;
+}
+
+@media screen and (max-width:900px) {
+  .footer__social {
+    padding-right: 37px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .footer__social {
+    position: absolute;
+    right: 18px;
+    top: 29px;
+    padding-right: 0;
+  }
+}

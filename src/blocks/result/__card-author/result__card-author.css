@@ -11,3 +11,10 @@
   color: #b6bcbf;
   margin: 0;
 }
+
+@media screen and (max-width: 1330px) {
+  .result__card-author {
+    bottom: 16px;
+    left: 16px;
+  }
+}

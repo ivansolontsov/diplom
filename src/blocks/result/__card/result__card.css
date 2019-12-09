@@ -16,3 +16,32 @@
   transform: translateY(-2px);
   cursor: pointer;
 }
+
+@media screen and (max-width: 1330px) {
+  .result__card {
+    max-width: 30vw;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .result__card {
+    margin: 0px 4px 8px 4px;
+    max-width: 224px;
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .result__card {
+    max-width: 45vw;
+    margin: 8px 4px 8px 4px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .result__card {
+    max-width: 288px;
+    height: 460px;
+    box-shadow: none;
+  }
+}

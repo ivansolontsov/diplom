@@ -5,3 +5,15 @@
   justify-content: flex-start;
   padding-top: 19px;
 }
+
+@media screen and (max-width: 1330px) {
+  .git__commit-info {
+    padding-top: 23px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .git__commit-info {
+    padding-top: 15px;
+  }
+}

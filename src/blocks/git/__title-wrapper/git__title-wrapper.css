@@ -8,3 +8,15 @@
   max-width: 1232px;
   margin: auto;
 }
+
+@media screen and (max-width: 1330px) {
+  .git__title-wrapper {
+    padding: 1px 0px 0px 40px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .git__title-wrapper {
+    padding: 0px 0px 0px 16px;
+  }
+}

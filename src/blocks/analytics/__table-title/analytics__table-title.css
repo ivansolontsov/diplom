@@ -15,3 +15,9 @@
 .analytics__table-title:nth-of-type(2) {
   max-width: 100%;
 }
+
+@media screen and (max-width: 444px) {
+  .analytics__table-title {
+    padding-right: 28px;
+  }
+}

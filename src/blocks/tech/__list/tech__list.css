@@ -7,3 +7,18 @@
   justify-content: flex-start;
   width: 100%;
 }
+
+@media screen and (max-width: 1330px) {
+  .tech__list {
+    padding: 41px 0px 0px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .tech__list {
+    width: 100%;
+    justify-content: space-around;
+  }
+}

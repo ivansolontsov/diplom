@@ -7,3 +7,17 @@
   line-height: 1.5rem;
   color: #1a1b22;
 }
+
+@media screen and (max-width:1330px) {
+  .description__text {
+    line-height: 1.7rem;
+    padding: 13px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .description__text {
+    line-height: 1.5rem;
+    padding: 20px 0px 0px 0px;
+  }
+}

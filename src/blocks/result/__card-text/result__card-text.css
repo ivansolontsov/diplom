@@ -9,3 +9,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@media screen and (max-width: 1330px) {
+  .result__card-text {
+    padding: 8px 16px 0px 16px;
+    max-height: 88px;
+  }
+}

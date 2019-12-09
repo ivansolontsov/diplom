@@ -16,3 +16,9 @@
 .result__news-analytics:hover {
   transform: translateX(5px);
 }
+
+@media screen and (max-width: 630px) {
+  .result__news-analytics {
+    padding-top: 16px;
+  }
+}

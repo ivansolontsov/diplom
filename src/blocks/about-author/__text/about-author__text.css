@@ -8,3 +8,9 @@
   margin: 0;
   letter-spacing: .17px;
 }
+
+@media screen and (max-width: 1330px) {
+  .about-author__text {
+    padding: 12px 0px 0px 0px;
+  }
+}

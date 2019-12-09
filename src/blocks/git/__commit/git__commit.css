@@ -13,3 +13,21 @@
   cursor: pointer;
   opacity: 0.8;
 }
+
+
+@media screen and (max-width: 1330px) {
+  .git__commit {
+    box-shadow: none;
+    width: 287px;
+    height: 194px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .git__commit {
+    box-shadow: none;
+    width: 256px;
+    height: 232px;
+    padding: 16px;
+  }
+}

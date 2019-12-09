@@ -1,0 +1,14 @@
+.footer__social-icon {
+  margin: 0px 13px 0 13px;
+  transition: opacity 0.5s;
+}
+
+.footer__social-icon:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 740px) {
+  .footer__social-icon {
+    margin: 0px 0px 0 26px;
+  }
+}

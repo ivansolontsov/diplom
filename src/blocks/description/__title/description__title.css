@@ -7,3 +7,9 @@
   max-width: 712px;
   color: #1a1b22;
 }
+
+@media screen and (max-width:1330px) {
+  .description__title {
+    font-size: 30px;
+  }
+}

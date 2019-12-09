@@ -10,6 +10,7 @@
 @import url('./__commit-info/git__commit-info.css');
 @import url('./__commit-text/git__commit-text.css');
 @import url('./__commit/git__commit.css');
+@import url('./__phone-link/git__phone-link.css');
 
 .git {
   max-width: 100%;
@@ -18,100 +19,14 @@
   background-color: #f5f6f7;
 }
 
-.git__phone-link {
-  max-width: calc(100% - 72px);
-  margin: auto;
-  text-align: center;
-  font-size: 18px;
-  color: #1A1B22;
-  text-decoration: none;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  border: 1px solid #1A1B22;
-  border-radius: 80px;
-  padding: 18px;
-  display: none;
-  margin-top: 9px;
-}
-
 @media screen and (max-width: 1330px) {
   .git {
     padding: 39px 0px 23px 0;
   }
-  .git__commit {
-    box-shadow: none;
-    width: 287px;
-    height: 194px;
-  }
-  .git__title-wrapper {
-    padding: 1px 0px 0px 40px;
-  }
-  .git__title {
-    font-size: 30px;
-    max-width: 336px;
-  }
-  .git__link {
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 9px 46px 0px 0px;
-  }
-  .git__link-arrow {
-    padding-top: 29px;
-  }
-  .git__author-name {
-    font-size: 20px;
-    max-width: 100%;
-  }
-  .git__author-avatar {
-    width: 48px;
-    height: 48px;
-  }
-  .git__commit-info {
-    padding-top: 23px;
-  }
-  .git__author-name-wrapper {
-    padding: 1px 0px 0px 12px;
-  }
 }
-
-@media screen and (max-width: 572px) {
-  .git__link {
-    display: none;
-  }
-  .git__phone-link {
-    display: block;
-  }
-}
-
 
 @media screen and (max-width: 444px) {
   .git {
     padding: 36px 0px 22px 0;
-  }
-  .git__commit {
-    box-shadow: none;
-    width: 256px;
-    height: 232px;
-    padding: 16px;
-  }
-  .git__title-wrapper {
-    padding: 0px 0px 0px 16px;
-  }
-  .git__title {
-    max-width: 199px;
-    line-height: 2.4rem;
-  }
-  .git__author-name {
-    font-size: 20px;
-    max-width: 100%;
-  }
-  .git__author-avatar {
-    width: 48px;
-    height: 48px;
-  }
-  .git__commit-info {
-    padding-top: 15px;
-  }
-  .git__author-name-wrapper {
-    padding: 1px 0px 0px 12px;
   }
 }

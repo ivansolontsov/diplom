@@ -27,7 +27,8 @@
         Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.
       </h3>
       <form class="search__form" name="search">
-        <input type="text" name="searchinput" pattern="Политика" class="search__input" placeholder="Введите тему новости" required>
+        <!-- паттерн просто для наглядности как работают стили для валидации -->
+        <input type="text" name="searchinput" pattern="^[А-яЁё]+(-[А-яЁё]+)?$" minlength="2" maxlength="31" class="search__input" placeholder="Введите тему новости" required>
         <button type="submit" class="search__button">Искать</button>
     </form>
     </div>

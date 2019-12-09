@@ -16,3 +16,18 @@
 .git__link:hover {
   transform: translateX(5px);
 }
+
+
+@media screen and (max-width: 1330px) {
+  .git__link {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 9px 46px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .git__link {
+    display: none;
+  }
+}

@@ -35,7 +35,7 @@ let mySwiper = new Swiper ('.swiper-container', {
     1331: {
       slidesPerView: '3',
       spaceBetween: 50,
-      slidesOffsetBefore: 120,
+      slidesOffsetBefore: 130,
       width: 1200,
       simulateTouch: false,
       centeredSlides: false,

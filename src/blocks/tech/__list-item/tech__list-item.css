@@ -7,3 +7,15 @@
   letter-spacing: 0.2px;
   margin-right: 42px;
 }
+
+@media screen and (max-width: 1330px) {
+  .tech__list-item {
+    margin: 0px 22px 0px 22px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .tech__title {
+    line-height: 2.4rem;
+  }
+}

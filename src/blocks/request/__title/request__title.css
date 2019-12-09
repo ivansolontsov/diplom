@@ -7,3 +7,18 @@
   padding-bottom: 24px;
 }
 
+@media screen and (max-width: 1330px) {
+  .request__title {
+    font-size: 32px;
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 444px) {
+  .request__title {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 16px;
+  }
+}

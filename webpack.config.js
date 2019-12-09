@@ -16,7 +16,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[chunkhash].js'
+        filename: '[name].[chunkhash].js',
     },
     module: {
         rules: [{
@@ -56,10 +56,12 @@ module.exports = {
             filename: 'index.html'
         }),
         new HtmlWebpackPlugin({
+            inject: false,
             template: './src/about.html',
             filename: 'about.html'
         }),
         new HtmlWebpackPlugin({
+            inject: false,
             template: './src/paper.html',
             filename: 'paper.html'
         }),
@@ -91,7 +93,7 @@ module.exports = {
               basename(htmlPlugin.options.filename) === 'paper.html',
         }),
         new MiniCssExtractPlugin({
-            filename: 'style.[contenthash].css'
+            filename: 'style.[contenthash].css',
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,
