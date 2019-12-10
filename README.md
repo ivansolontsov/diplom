@@ -16,6 +16,7 @@ current version - 0.0.1
 $ mkdir (ваше название директории)
 $ cd (ваше название директории)
 $ git clone https://github.com/ivansolontsov/diplom/
+$ cd diplom
 $ npm run build
 ```
 
