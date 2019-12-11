@@ -5,8 +5,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const { basename } = require('path')
 
 module.exports = {
     entry: {
@@ -28,7 +26,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 'css-loader', 'postcss-loader']
+                use: [(isDev ? 'style-loader' : { loader: MiniCssExtractPlugin.loader, options: { publicPath: '../', }, }), 'css-loader', 'postcss-loader']
             },
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
@@ -66,7 +64,7 @@ module.exports = {
             filename: 'paper.html'
         }),
         new MiniCssExtractPlugin({
-            filename: 'style.[contenthash].css',
+            filename: './css/style.[contenthash].css',
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,

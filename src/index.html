@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer</title>
+  <link rel="icon" href="<%=require('./images/index__favicon.svg')%>">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
   <meta name="description" content="Веб-приложение для поиска новостей по теме новости, с предоставлением отчета о популярности темы, наглядной диаграммой.">
   <meta name="author" content="Солонцов Иван Александрович" />
@@ -129,7 +130,11 @@
     </div>
   </section>
   <section class="about-author">
-    <img src="<%=require('./images/avatar.png')%>" alt="Аватар Ивана Солонцова" class="about-author__image">
+    <picture>
+      <source srcset="<%=require('./images/avatar_232.png')%>" media="(min-width: 670px) and (max-width: 1329px)">
+      <source srcset="<%=require('./images/avatar_272.png')%>" media="(min-width: 320px) and (max-width: 669px)">
+      <img srcset="<%=require('./images/avatar_464.png')%>" alt="Аватар Ивана Солонцова" class="about-author__image">
+    </picture>
     <div class="about-author__wrapper">
       <h2 class="about-author__title">Об авторе</h2>
       <p class="about-author__text">

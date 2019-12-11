@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Аналитика</title>
+  <link rel="icon" href="<%=require('./images/paper__favicon.svg')%>">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.paper.css %>">
   <meta name="description" content="Аналитический отчет по теме новости.">
   <meta name="author" content="Солонцов Иван Александрович" />
@@ -21,17 +22,17 @@
         </ul>
       </nav>
   </header>
-  <section class="breadcumbs">
+  <div class="breadcumbs">
       <a href="/index.html" class="breadcumbs__link">Главная</a><span class="breadcumbs__link">Аналитика</span>
-  </section>
+  </div>
   <section class="request">
     <h1 class="request__title">Вы спросили: «Путешествия»</h1>
     <h3 class="request__subtitle">Новостей за неделю: <span class="request__numbers">34 324</span></h3>
     <h3 class="request__subtitle">Упоминаний в загаловках: <span class="request__numbers">235</span></h3>
   </section>
   <section class="analytics">
+    <h2 class="analytics__title">Аналитика по дням</h2>
     <table class="analytics__table">
-      <caption class="analytics__title">Аналитика по дням</caption>
       <thead class="analytics__header">
         <tr>
           <td class="analytics__table-title">Дата (август)</td>
