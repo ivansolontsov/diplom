@@ -38,7 +38,7 @@ module.exports = {
                     loader: 'image-webpack-loader',
                     options: {
                       bypassOnDebug: true,
-                      disable: true,
+                      disable: false,
                     },
                   },
                 ],
@@ -64,33 +64,6 @@ module.exports = {
             inject: false,
             template: './src/paper.html',
             filename: 'paper.html'
-        }),
-        new FaviconsWebpackPlugin({
-            logo: './src/images/index__favicon.svg',
-            mode: 'webapp',
-            publicPath: './assets',
-            outputPath: './assets/index',
-            prefix: 'index/',
-            inject: htmlPlugin =>
-              basename(htmlPlugin.options.filename) === 'index.html',
-        }),
-        new FaviconsWebpackPlugin({
-            logo: './src/images/index__favicon.svg',
-            mode: 'webapp',
-            publicPath: './assets',
-            outputPath: './assets/index',
-            prefix: 'index/',
-            inject: htmlPlugin =>
-              basename(htmlPlugin.options.filename) === 'about.html',
-        }),
-        new FaviconsWebpackPlugin({
-            logo: './src/images/paper__favicon.svg',
-            mode: 'webapp',
-            publicPath: './assets',
-            outputPath: './assets/paper',
-            prefix: 'paper/',
-            inject: htmlPlugin =>
-              basename(htmlPlugin.options.filename) === 'paper.html',
         }),
         new MiniCssExtractPlugin({
             filename: 'style.[contenthash].css',
