@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NewsAnalyzer</title>
+  <link rel="icon" href="<%=require('./images/index__favicon.svg')%>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <meta name="description" content="Веб-приложение для поиска новостей по теме новости, с предоставлением отчета о популярности темы, наглядной диаграммой.">
+  <meta name="author" content="Солонцов Иван Александрович" />
+  <meta name="copyright" lang="ru" content="Проект студента 4-го потока в Яндекс.Практикум" />
+</head>
+<body>
+<main class="root">
+  <section class="search">
+    <header class="header">
+      <div class="logo"><a href="index.html" class="logo__link">NewsAnalyzer</a></div>
+      <nav>
+        <ul class="header__navigation-list">
+          <li class="header__navigation-list-item header__navigation-list-item_active"><a href='index.html' class="header__navigation-link header__navigation-link_active">Главная</a></li>
+          <li class="header__navigation-list-item"><a href='about.html' class="header__navigation-link">О проекте</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="search__wrapper">
+      <h1 class="search__title">
+        Что в мире творится?
+      </h1>
+      <h3 class="search__subtitle">
+        Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.
+      </h3>
+      <form class="search__form" name="search">
+        <!-- паттерн просто для наглядности как работают стили для валидации -->
+        <input type="text" name="searchinput" pattern="^[А-яЁё]+$" minlength="2" maxlength="31" class="search__input" placeholder="Введите тему новости" required>
+        <button type="submit" class="search__button">Искать</button>
+    </form>
+    </div>
+  </section>
+  <section class="result result_is-opened">
+    <div class="result__progress" style="display: none">
+        <i class="result__preloader"></i>
+        <p class="reslut__progress-text">
+          Идёт поиск новостей...
+        </p>
+    </div>
+    <div class="result__not-found" style="display: none">
+      <img src="<%=require('./images/notfound.svg')%>" alt="Ничего не найдено" class="result__not-found-image">
+      <h3 class="result__not-found-title">Ничего не найдено</h3>
+      <h4 class="result__not-found-subtitle">К сожалению по вашему запросу
+          ничего не найдено.</h4>
+    </div>
+    <div class="result__news">
+      <div class="result__news-title-wrapper">
+        <h2 class="result__news-title">Результаты поиска</h2>
+        <a href='paper.html' class='result__news-analytics'>Посмотреть аналитику <img src="<%=require('./images/arrow.svg')%>" alt="Посмотреть аналитику" class="result__news-analytics-arrow"></a>
+      </div>
+      <div class="result__cards-wrapper">
+        <div class="result__card">
+          <div class="result__card-image" style="background-image: url('<%=require('./images/card__image.png')%>')"></div>
+          <!-- для будущего js засунул адрес пикчи в style, не делаю через тег IMG тк если картинки будут разных размеров, пропорции не будут сохраняться. -->
+          <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
+          <h3 class="result__card-title">Национальное достояние – парки</h3>
+          <p class="result__card-text">
+              В 2016 году Америка отмечала важный юбилей:
+              сто лет назад здесь начала складываться
+              система национальных парков – охраняемых
+              территорий, где и сегодня каждый может приобщиться к природе.
+          </p>
+          <small class="result__card-author">Лента.Ру</small>
+        </div>
+        <div class="result__card">
+          <div class="result__card-image" style="background-image: url('<%=require('./images/image_04.png')%>')"></div>
+          <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
+          <h3 class="result__card-title">Лесные огоньки: история одной фотографии</h3>
+          <p class="result__card-text">
+              Фотограф отвлеклась от освещения суровой
+              политической реальности Мексики,
+              чтобы запечатлеть ускользающую красоту одного
+              из местных чудес природы.
+          </p>
+          <small class="result__card-author">Лента.Ру</small>
+          </div>
+          <div class="result__card">
+            <div class="result__card-image" style="background-image: url('<%=require('./images/image_07.png')%>')"></div>
+            <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
+            <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+            <p class="result__card-text">
+              Знаменитый фотограф снимает первозданные леса России,
+              чтобы рассказать о необходимости их сохранения.
+              В этот раз он отправился в Двинско-Пинежскую тайгу, где...
+            </p>
+            <small class="result__card-author">РИА</small>
+          </div>
+          <div class="result__card">
+            <div class="result__card-image" style="background-image: url('<%=require('./images/card__image.png')%>')"></div>
+            <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
+            <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+            <p class="result__card-text">
+                Знаменитый фотограф снимает первозданные леса России,
+                чтобы рассказать о необходимости их сохранения.
+                В этот раз он отправился в Двинско-Пинежскую тайгу, где...
+            </p>
+            <small class="result__card-author">РИА</small>
+          </div>
+          <div class="result__card">
+              <div class="result__card-image" style="background-image: url('<%=require('./images/image_04.png')%>')"></div>
+              <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
+              <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+              <p class="result__card-text">
+                Знаменитый фотограф снимает первозданные леса России,
+                чтобы рассказать о необходимости их сохранения.
+                В этот раз он отправился в Двинско-Пинежскую тайгу, где...
+              </p>
+              <small class="result__card-author">РИА</small>
+          </div>
+          <div class="result__card">
+            <div class="result__card-image" style="background-image: url('<%=require('./images/image_07.png')%>')"></div>
+            <time datetime="2019-08-02" class="result__card-date">2 августа, 2019</time>
+            <h3 class="result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+            <p class="result__card-text">
+              Знаменитый фотограф снимает первозданные леса России,
+              чтобы рассказать о необходимости их сохранения.
+              В этот раз он отправился в Двинско-Пинежскую тайгу, где...
+            </p>
+            <small class="result__card-author">РИА</small>
+          </div>
+      </div>
+      <button class="result__button">Показать еще</button>
+    </div>
+  </section>
+  <section class="about-author">
+    <picture>
+      <source srcset="<%=require('./images/avatar_232.png')%>" media="(min-width: 670px) and (max-width: 1329px)">
+      <source srcset="<%=require('./images/avatar_272.png')%>" media="(min-width: 320px) and (max-width: 669px)">
+      <img src="<%=require('./images/avatar_464.png')%>" alt="Аватар Ивана Солонцова" class="about-author__image">
+    </picture>
+    <div class="about-author__wrapper">
+      <h2 class="about-author__title">Об авторе</h2>
+      <p class="about-author__text">
+          Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+      </p>
+      <p class="about-author__text">
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+      </p>
+    </div>
+  </section>
+  <footer class="footer">
+    <small class="footer__copyright">© 2019  Supersite</small>
+    <nav>
+      <ul class="footer__nav">
+        <li class="footer__nav-item"><a href="index.html" class="footer__nav-item-link">Главная</a></li>
+        <li class="footer__nav-item"><a href="about.html" class="footer__nav-item-link">О проекте</a></li>
+        <li class="footer__nav-item"><a href="https://praktikum.yandex.ru/profile/web-developer/" target="_blank" class="footer__nav-item-link">Яндекс.Практикум</a></li>
+      </ul>
+    </nav>
+    <div class="footer__social">
+      <a href="https://github.com/ivansolontsov" target="_blank"><img src="<%=require('./images/git.svg')%>" alt="Логотип GitHub" class="footer__social-icon"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="<%=require('./images/fb.svg')%>" alt="Логотип Facebook" class="footer__social-icon"></a>
+    </div>
+  </footer>
+</main>
+</body>
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</html>

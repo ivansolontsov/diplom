@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Аналитика</title>
+  <link rel="icon" href="<%=require('./images/paper__favicon.svg')%>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.paper.css %>">
+  <meta name="description" content="Аналитический отчет по теме новости.">
+  <meta name="author" content="Солонцов Иван Александрович" />
+  <meta name="copyright" lang="ru" content="Проект студента 4-го потока в Яндекс.Практикум" />
+</head>
+<body>
+<div class="root">
+  <header class="header">
+    <div class="logo"><a href="index.html" class="logo__link logo__link_black">NewsAnalyzer</a></div>
+      <nav class="header__navigation">
+        <ul class="header__navigation-list">
+          <li class="header__navigation-list-item"><a href='index.html' class="header__navigation-link header__navigation-link_paper">Главная</a></li>
+          <li class="header__navigation-list-item"><a href='about.html' class="header__navigation-link header__navigation-link_paper">О проекте</a></li>
+        </ul>
+      </nav>
+  </header>
+  <div class="breadcumbs">
+      <a href="/index.html" class="breadcumbs__link">Главная</a><span class="breadcumbs__link">Аналитика</span>
+  </div>
+  <section class="request">
+    <h1 class="request__title">Вы спросили: «Путешествия»</h1>
+    <h3 class="request__subtitle">Новостей за неделю: <span class="request__numbers">34 324</span></h3>
+    <h3 class="request__subtitle">Упоминаний в загаловках: <span class="request__numbers">235</span></h3>
+  </section>
+  <section class="analytics">
+    <h2 class="analytics__title">Аналитика по дням</h2>
+    <table class="analytics__table">
+      <thead class="analytics__header">
+        <tr>
+          <td class="analytics__table-title">Дата (август)</td>
+          <td class="analytics__table-title">Кол-во упоминаний</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="analytics__range">
+          <td class="analytics__range-number">0</td>
+          <td class="analytics__range-number">25</td>
+          <td class="analytics__range-number">50</td>
+          <td class="analytics__range-number">75</td>
+          <td class="analytics__range-number">100</td>
+        </tr>
+        <tr class="analytics__line-wrapper">
+          <td class="analytics__line-date">19, пн</td>
+          <td class="analytics__line"><div class="analytics__inner-line" style="width: 15%;"><p class="analytics__inner-line-text">15</p></div></td>
+        </tr>
+        <tr class="analytics__line-wrapper">
+          <td class="analytics__line-date">20, вт</td>
+          <td class="analytics__line"><div class="analytics__inner-line" style="width: 18%;"><p class="analytics__inner-line-text">18</p></div></td>
+        </tr>
+        <tr class="analytics__line-wrapper">
+          <td class="analytics__line-date">21, ср</td>
+          <td class="analytics__line"><div class="analytics__inner-line" style="width: 11%;"><p class="analytics__inner-line-text">11</p></div></td>
+        </tr>
+        <tr class="analytics__line-wrapper">
+          <td class="analytics__line-date">22, чт</td>
+          <td class="analytics__line"><div class="analytics__inner-line" style="width: 39%;"><p class="analytics__inner-line-text">39</p></div></td>
+        </tr>
+        <tr class="analytics__line-wrapper">
+          <td class="analytics__line-date">23, пт</td>
+          <td class="analytics__line"><div class="analytics__inner-line" style="width: 45%;"><p class="analytics__inner-line-text">45</p></div></td>
+        </tr>
+        <tr class="analytics__line-wrapper">
+          <td class="analytics__line-date">24, сб</td>
+          <td class="analytics__line"><div class="analytics__inner-line" style="width: 73%;"><p class="analytics__inner-line-text">73</p></div></td>
+        </tr>
+        <tr class="analytics__line-wrapper">
+          <td class="analytics__line-date">25, вс</td>
+          <td class="analytics__line"><div class="analytics__inner-line" style="width: 34%;"><p class="analytics__inner-line-text">34</p></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <footer class="footer">
+      <small class="footer__copyright">© 2019  Supersite</small>
+      <nav>
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a href="index.html" class="footer__nav-item-link">Главная</a></li>
+          <li class="footer__nav-item"><a href="about.html" class="footer__nav-item-link">О проекте</a></li>
+          <li class="footer__nav-item"><a href="https://praktikum.yandex.ru/profile/web-developer/" target="_blank" class="footer__nav-item-link">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <a href="https://github.com/ivansolontsov" target="_blank"><img src="<%=require('./images/git.svg')%>" alt="Логотип GitHub" class="footer__social-icon"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="<%=require('./images/fb.svg')%>" alt="Логотип Facebook" class="footer__social-icon"></a>
+      </div>
+  </footer>
+</div>
+</body>
+<script src="<%= htmlWebpackPlugin.files.chunks.paper.entry %>"></script>
+</html>

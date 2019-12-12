@@ -1,0 +1,12 @@
+.footer__nav-item-link {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;
+  text-decoration: none;
+  transition: opacity 0.5s;
+}
+
+.footer__nav-item-link:hover {
+  opacity: 0.5;
+}

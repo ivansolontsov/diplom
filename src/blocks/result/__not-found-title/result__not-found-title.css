@@ -1,0 +1,10 @@
+.result__not-found-title {
+  max-width: 350px;
+  padding: 25px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  color: #1a1b22;
+}

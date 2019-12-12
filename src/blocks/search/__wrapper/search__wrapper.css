@@ -1,0 +1,23 @@
+.search__wrapper {
+    max-width: 608px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    padding-top: 80px;
+}
+
+
+
+@media screen and (max-width: 1330px) {
+  .search__wrapper {
+    padding-top: 40px;
+  }
+}
+
+
+@media screen and (max-width: 444px) {
+  .search__wrapper {
+    padding-top: 31px;
+  }
+}

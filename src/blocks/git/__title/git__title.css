@@ -1,0 +1,22 @@
+.git__title {
+  margin: 0;
+  padding: 0;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #1a1b22
+}
+
+@media screen and (max-width: 1330px) {
+  .git__title {
+    font-size: 30px;
+    max-width: 336px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .git__title {
+    max-width: 199px;
+    line-height: 2.4rem;
+  }
+}

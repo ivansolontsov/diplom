@@ -1,0 +1,19 @@
+@import url('./__link/breadcumbs__link.css');
+
+.breadcumbs {
+  max-width: 1232px;
+  margin: auto;
+  padding: 44px 104px 0px 104px;
+}
+
+@media screen and (max-width: 1330px) {
+  .breadcumbs {
+    padding: 36px 40px 0px 40px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .breadcumbs {
+    display: none;
+  }
+}

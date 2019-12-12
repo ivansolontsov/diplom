@@ -1,0 +1,15 @@
+.analytics__title {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 444px) {
+  .analytics__title {
+    font-size: 22px;
+  }
+}

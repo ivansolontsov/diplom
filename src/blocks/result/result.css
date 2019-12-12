@@ -1,0 +1,26 @@
+@import url('./__preloader/result__preloader.css');
+@import url('./__progress-text/result__progress-text.css');
+@import url('./__progress/result__progress.css');
+@import url('./_is-opened/result_is-opened.css');
+@import url('./__not-found/result__not-found.css');
+@import url('./__not-found-image/result__not-found-image.css');
+@import url('./__not-found-title/result__not-found-title.css');
+@import url('./__not-found-subtitle/result__not-found-subtitle.css');
+@import url('./__button/result__button.css');
+@import url('./__card-author/result__card-author.css');
+@import url('./__card-date/result__card-date.css');
+@import url('./__card-image/result__card-image.css');
+@import url('./__card-text/result__card-text.css');
+@import url('./__card-title/result__card-title.css');
+@import url('./__card/result__card.css');
+@import url('./__cards-wrapper/result__cards-wrapper.css');
+@import url('./__news-analytics-arrow/result__news-analytics-arrow.css');
+@import url('./__news-analytics/result__news-analytics.css');
+@import url('./__news-title-wrapper/result__news-title-wrapper.css');
+@import url('./__news-title/result__news-title.css');
+@import url('./__news/result__news.css');
+
+.result {
+  background-color: #f5f6f7;
+  display: none;
+}

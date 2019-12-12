@@ -1,0 +1,10 @@
+.git__link-arrow {
+  padding-left: 10px;
+}
+
+
+@media screen and (max-width: 1330px) {
+  .git__link-arrow {
+    padding-top: 29px;
+  }
+}

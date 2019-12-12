@@ -1,0 +1,22 @@
+.header__navigation-link {
+    text-decoration: none;
+    color: #b6bcbf;
+    transition: transform 1s;
+}
+
+.header__navigation-link_active {
+    color: #fff;
+}
+
+.header__navigation-link_active_black {
+  color: #1a1b22;
+}
+
+.header__navigation-link:hover {
+    transform: translateY(-4px);
+}
+
+.header__navigation-link_paper:hover {
+  transition: .5s;
+  color: #1a1b22;
+}

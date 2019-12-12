@@ -1,0 +1,10 @@
+.footer__nav-item {
+  margin: 0;
+  padding: 0px 12px 0px 32px;
+}
+
+@media screen and (max-width: 740px) {
+  .footer__nav-item {
+    padding: 0px 12px 24px 16px;
+  }
+}

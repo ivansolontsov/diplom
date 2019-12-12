@@ -1,0 +1,13 @@
+.analytics__range {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 14px 0px 11px 101px;
+}
+
+@media screen and (max-width: 444px) {
+  .analytics__range {
+    display: none;
+  }
+}

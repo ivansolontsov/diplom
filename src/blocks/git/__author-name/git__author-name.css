@@ -1,0 +1,23 @@
+.git__author-name {
+  padding: 0;
+  margin: 0;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  color: #1a1b22;
+}
+
+
+@media screen and (max-width: 1330px) {
+  .git__author-name {
+    font-size: 20px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .git__author-name {
+    font-size: 20px;
+    max-width: 100%;
+  }
+}

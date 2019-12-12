@@ -1,0 +1,18 @@
+.git__author-name-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px 0px 0px 16px;
+}
+
+@media screen and (max-width: 1330px) {
+  .git__author-name-wrapper {
+    padding: 1px 0px 0px 12px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .git__author-name-wrapper {
+    padding: 1px 0px 0px 12px;
+  }
+}

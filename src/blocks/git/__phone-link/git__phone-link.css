@@ -1,0 +1,20 @@
+.git__phone-link {
+  max-width: calc(100% - 72px);
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  color: #1A1B22;
+  text-decoration: none;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  border: 1px solid #1A1B22;
+  border-radius: 80px;
+  padding: 18px;
+  display: none;
+  margin-top: 9px;
+}
+
+@media screen and (max-width: 572px) {
+  .git__phone-link {
+    display: block;
+  }
+}

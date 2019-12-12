@@ -1,0 +1,24 @@
+.request__title {
+  margin: 0;
+  padding: 0;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #1a1b22;
+  padding-bottom: 24px;
+}
+
+@media screen and (max-width: 1330px) {
+  .request__title {
+    font-size: 32px;
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 444px) {
+  .request__title {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 16px;
+  }
+}

@@ -1,0 +1,16 @@
+.about-author__text {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5rem;
+  max-width: 600px;
+  padding: 24px 0px 0px 0px;
+  margin: 0;
+  letter-spacing: .17px;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-author__text {
+    padding: 12px 0px 0px 0px;
+  }
+}

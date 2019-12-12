@@ -1,0 +1,22 @@
+.git__title-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 7px 0px 8px;
+  max-width: 1232px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1330px) {
+  .git__title-wrapper {
+    padding: 1px 0px 0px 40px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .git__title-wrapper {
+    padding: 0px 0px 0px 16px;
+  }
+}

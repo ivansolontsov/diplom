@@ -1,0 +1,12 @@
+.result__cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1330px) {
+  .result__cards-wrapper {
+    justify-content: center;
+  }
+}

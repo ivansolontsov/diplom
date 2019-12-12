@@ -1,0 +1,15 @@
+.analytics__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-bottom: 2px solid #1a1b22;
+  padding-top: 43px;
+  padding-bottom: 8px;
+}
+
+@media screen and (max-width: 444px) {
+  .analytics__header {
+    padding-top: 17px;
+    padding-bottom: 0px;
+  }
+}

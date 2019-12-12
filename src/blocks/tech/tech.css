@@ -1,0 +1,10 @@
+@import url('./__list-image/tech__list-image.css');
+@import url('./__list-item/tech__list-item.css');
+@import url('./__list/tech__list.css');
+@import url('./__title/tech__title.css');
+@import url('./__wrapper/tech__wrapper.css');
+
+.tech {
+  max-width: 100%;
+  background-color: #f5f6f7;
+}

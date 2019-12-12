@@ -1,0 +1,36 @@
+.result__button {
+  background-color: #fff;
+  border: 0px;
+  width: 288px;
+  height: 64px;
+  border-radius: 50px;
+  color: #1a1b22;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  display: block;
+  margin: 47px auto 0px auto;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.result__button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width:900px) {
+  .result__button {
+    width: 240px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width:444px) {
+  .result__button {
+    width: 288px;
+    height: 56px;
+    z-index: 10;
+    margin: 13px auto 0px auto;
+  }
+}

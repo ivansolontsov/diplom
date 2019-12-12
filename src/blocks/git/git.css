@@ -1,0 +1,32 @@
+@import url('./__link-arrow/git__link-arrow.css');
+@import url('./__link/git__link.css');
+@import url('./__title-wrapper/git__title-wrapper.css');
+@import url('./__title/git__title.css');
+@import url('./__author-avatar/git__author-avatar.css');
+@import url('./__author-email/git__author-email.css');
+@import url('./__author-name-wrapper/git__author-name-wrapper.css');
+@import url('./__author-name/git__author-name.css');
+@import url('./__commit-date/git__commit-date.css');
+@import url('./__commit-info/git__commit-info.css');
+@import url('./__commit-text/git__commit-text.css');
+@import url('./__commit/git__commit.css');
+@import url('./__phone-link/git__phone-link.css');
+
+.git {
+  max-width: 100%;
+  margin: auto;
+  padding: 70px 0 70px 0;
+  background-color: #f5f6f7;
+}
+
+@media screen and (max-width: 1330px) {
+  .git {
+    padding: 39px 0px 23px 0;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .git {
+    padding: 36px 0px 22px 0;
+  }
+}

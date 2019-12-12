@@ -1,0 +1,11 @@
+@media screen and (max-width: 1330px) {
+  .about-author__image {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .about-author__image {
+    padding-top: 32px;
+  }
+}

@@ -1,0 +1,24 @@
+.result__card-text {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #1a1b22;
+  margin: 0;
+  padding: 16px 24px 0px 24px;
+  line-height: 1.4rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1330px) {
+  .result__card-text {
+    padding: 8px 16px 0px 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .result__card-text {
+    -webkit-line-clamp: 4;
+  }
+}

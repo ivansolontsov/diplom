@@ -1,0 +1,9 @@
+// .gitignore
+/dist
+/node_modules
+*.idea
+*.sublime
+*.vscode
+*.log
+/DS_Store
+Thumbs.db
