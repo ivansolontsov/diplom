@@ -19,8 +19,8 @@
 @import url('./__news-title-wrapper/result__news-title-wrapper.css');
 @import url('./__news-title/result__news-title.css');
 @import url('./__news/result__news.css');
+@import url('./__card-link/result__card-link.css');
 
 .result {
   background-color: #f5f6f7;
-  display: none;
 }
