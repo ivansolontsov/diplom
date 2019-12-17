@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer</title>
   <link rel="icon" href="./images/index__favicon.svg">
-  <link rel="stylesheet" href="./css/style.3d7ee8f52743f63ce953.css">
+  <link rel="stylesheet" href="./css/style.42129bfe991edab1e4ae.css">
   <meta name="description" content="Веб-приложение для поиска новостей по теме новости, с предоставлением отчета о популярности темы, наглядной диаграммой.">
   <meta name="author" content="Солонцов Иван Александрович" />
   <meta name="copyright" lang="ru" content="Проект студента 4-го потока в Яндекс.Практикум" />
@@ -30,9 +30,10 @@
       <h3 class="search__subtitle">
         Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.
       </h3>
-      <form class="search__form" name="search">
+      <form class="search__form" name="search" novalidate>
         <!-- паттерн просто для наглядности как работают стили для валидации -->
-        <input type="text" name="input" minlength="2" maxlength="31" class="search__input" placeholder="Введите тему новости" required>
+        <input type="text" name="input" minlength="2" maxlength="31" pattern="^[А-яЁёA-z]+$" class="search__input" placeholder="Введите тему новости" required>
+        <div class="form__error"></div>
         <button type="submit" class="search__button">Искать</button>
     </form>
     </div>
@@ -56,6 +57,7 @@
         <a href='paper.html' class='result__news-analytics'>Посмотреть аналитику <img src="./images/arrow.svg" alt="Посмотреть аналитику" class="result__news-analytics-arrow"></a>
       </div>
       <div class="result__cards-wrapper">
+        <p class="result__error"></p>
       </div>
       <button class="result__button">Показать еще</button>
     </div>
@@ -92,5 +94,5 @@
   </footer>
 </main>
 </body>
-<script src="main.76f70d4a5e564b16c266.js"></script>
+<script src="main.5f809219fff04b174b64.js"></script>
 </html>
