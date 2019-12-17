@@ -1,2 +1,2 @@
 import "./pages/paper.css";
-import "./script/script.js";
+import "./script/paper.js";

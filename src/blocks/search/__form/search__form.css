@@ -1,6 +1,8 @@
 .search__form {
   position: relative;
   margin-top: 63px;
+  display: flex;
+  flex-direction: column;
 }
 
 

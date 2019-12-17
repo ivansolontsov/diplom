@@ -3,7 +3,7 @@
   height: 272px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center left;
 }
 
 @media screen and (max-width:900px) {

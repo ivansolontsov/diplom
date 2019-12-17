@@ -20,6 +20,7 @@
 @import url('./__news-title/result__news-title.css');
 @import url('./__news/result__news.css');
 @import url('./__card-link/result__card-link.css');
+@import url('./__error/result__error.css');
 
 .result {
   background-color: #f5f6f7;
