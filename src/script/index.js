@@ -8,6 +8,8 @@ const formError = document.querySelector('.form__error');
 const resultTitle = document.querySelector('.result__news-title-wrapper');
 const resultError = document.querySelector('.result__error');
 
+import {Api} from './api.js';
+
 class Search {
   constructor(form, errorWrapper) {
     this.form = form;
@@ -32,41 +34,7 @@ class Search {
   }
 }
 const searchComponent = new Search(searchForm, formError);
-
-class Api {
-  constructor(token) {
-    this.token = token;
-  }
-  getResponseData(res) {
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(`Ошибка: ${res.status}`);
-  }
-  getNews(keyword, notFoundBlock, preloaderBlock, mainContainer) {
-    // time calculate
-    let todayDate = new Date();
-    let sevenDaysAgoDate = new Date();
-    sevenDaysAgoDate.setDate(todayDate.getDate() - 6);
-    const timeFrom = `${sevenDaysAgoDate.getFullYear()}-${sevenDaysAgoDate.getMonth() + 1}-${sevenDaysAgoDate.getDate()}`;
-    const timeTo = `${todayDate.getFullYear()}-${todayDate.getMonth() + 1}-${todayDate.getDate()}`;
-    // time calculate is over
-
-    notFoundBlock.setAttribute('style', 'display: none');
-    mainContainer.setAttribute('style', 'display: none');
-    preloaderBlock.setAttribute('style', 'display: block'); // progress bar open
-
-    return fetch(`https://newsapi.org/v2/everything?q=${keyword}&from=${timeFrom}&to=${timeTo}&pageSize=100&language=ru&sortBy=popularity&${this.token}`, {
-      headers: {
-        authorization: this.token
-      }
-    }).then(res => {
-        return this.getResponseData(res);
-      })
-  }
-}
 const apiComponent = new Api('2c22949ae7344b648fca6988958eda43');
-
 
 class Card {
   constructor (image, date, title, text, source, url) {
@@ -84,7 +52,7 @@ class Card {
     };
     formatDate = formatDate.toLocaleString("ru", options);
     this.formatDate = formatDate;
-    this.cardElement = this.createCard(this.image, this.date, this.formatDate, this.title, this.text, this.source, this.url);
+    this.cardElement = this.createCard();
   }
   createCard() {
     const card =  document.createElement('a')
