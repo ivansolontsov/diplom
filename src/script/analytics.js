@@ -65,7 +65,6 @@ class Analytics {
     this.analyticsLines.forEach((element, index) => {
       this.analyticsLineDates[index].textContent = days.toLocaleString("ru", daysOptions); // проставляем даты прошедшей недели, до сегодняшнего дня(включительно)
 
-
       element.closest('.analytics__inner-line').setAttribute(`style`, `width: ${analyticsTable[`${days.getFullYear()}-${days.getMonth() + 1}-${days.getDate()}`]}%`);
       if(analyticsTable[`${days.getFullYear()}-${days.getMonth() + 1}-${days.getDate()}`] === 0) { // вместо ноликов будет пусто :)
         analyticsTable[`${days.getFullYear()}-${days.getMonth() + 1}-${days.getDate()}`] = '';
