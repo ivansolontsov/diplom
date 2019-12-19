@@ -23,7 +23,7 @@ class Search {
     } else
       this.error.setAttribute('style', 'display: none');
     if(!this.form.elements.input.validity.valid) {
-      this.error.textContent = 'Запрос может состоять из одного слова длинной от 2 до 31 символа.';
+      this.error.textContent = 'Длина запроса должна быть от 2 до 31 символа.';
       this.error.setAttribute('style', 'display: block');
       return false;
     } else
@@ -32,8 +32,6 @@ class Search {
   }
 }
 const searchComponent = new Search(searchForm, formError);
-
-
 
 class Api {
   constructor(token) {
@@ -49,20 +47,20 @@ class Api {
     // time calculate
     let todayDate = new Date();
     let sevenDaysAgoDate = new Date();
-    sevenDaysAgoDate.setDate(todayDate.getDate() - 7);
-    const timeFrom = sevenDaysAgoDate.toISOString().substr(0, 10);
+    sevenDaysAgoDate.setDate(todayDate.getDate() - 6);
+    const timeFrom = `${sevenDaysAgoDate.getFullYear()}-${sevenDaysAgoDate.getMonth() + 1}-${sevenDaysAgoDate.getDate()}`;
+    const timeTo = `${todayDate.getFullYear()}-${todayDate.getMonth() + 1}-${todayDate.getDate()}`;
     // time calculate is over
 
     notFoundBlock.setAttribute('style', 'display: none');
     mainContainer.setAttribute('style', 'display: none');
     preloaderBlock.setAttribute('style', 'display: block'); // progress bar open
 
-    return fetch(`https://newsapi.org/v2/everything?q=${keyword}&from=${timeFrom}&to=${todayDate}&pageSize=100&language=ru&sortBy=publishedAt&${this.token}`, {
+    return fetch(`https://newsapi.org/v2/everything?q=${keyword}&from=${timeFrom}&to=${timeTo}&pageSize=100&language=ru&sortBy=popularity&${this.token}`, {
       headers: {
         authorization: this.token
       }
     }).then(res => {
-      preloaderBlock.setAttribute('style', 'display: none'); // progress bar closed
         return this.getResponseData(res);
       })
   }
@@ -82,11 +80,10 @@ class Card {
     let formatDate = new Date(this.date);
     const options = {
       month: 'long',
-      day: 'numeric',
+      day: 'numeric'
     };
     formatDate = formatDate.toLocaleString("ru", options);
     this.formatDate = formatDate;
-
     this.cardElement = this.createCard(this.image, this.date, this.formatDate, this.title, this.text, this.source, this.url);
   }
   createCard() {
@@ -116,7 +113,6 @@ class NewsList {
     this.notFoundBlock = notFoundBlock;
     this.preloaderBlock = preloaderBlock;
     this.mainContainer = mainContainer;
-
     this.resultError = resultError;
     this.mainContainerTitle = mainContainerTitle;
 
@@ -132,9 +128,14 @@ class NewsList {
     apiComponent.getNews(keyword, this.notFoundBlock, this.preloaderBlock, this.mainContainer)
       .then(newsList => {
         this.clear();
+
         this.mainContainerTitle.setAttribute('style', 'display: flex'); // заголовок блока
         this.resultError.setAttribute('style', 'display: none'); // ошибка при запросе
-        sessionStorage.setItem('request', JSON.stringify(newsList));
+        this.preloaderBlock.setAttribute('style', 'display: none'); // progress bar closed
+
+        sessionStorage.setItem('request', JSON.stringify(newsList)); // отправляем полученное в хранилище
+        sessionStorage.setItem('keyword', keyword);
+
         if (newsList.articles.length > 3) {
           this.moreNewsButton.setAttribute('style', 'display: block');
         } else
@@ -150,6 +151,7 @@ class NewsList {
         this.moreNewsButton.setAttribute('style', 'display: none');
         this.mainContainer.setAttribute('style', 'display: block');
         this.resultError.setAttribute('style', 'display: block');
+        this.preloaderBlock.setAttribute('style', 'display: none');
         this.resultError.textContent = "Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз";
     });
   }
@@ -168,6 +170,7 @@ class NewsList {
         cards[cardNumber].url);
       this.container.appendChild(cardComponent.cardElement);
       cardNumber += 1;
+      sessionStorage.setItem('cardNumber', cardNumber); // отправляем количество открытых карточек в хранилище
     }
   }
   clear() {
