@@ -4,7 +4,6 @@ const progressBarBlock = document.querySelector('.result__progress'); // progres
 const newsBlock = document.querySelector('.result__news'); // news section
 const notFoundError = document.querySelector('.result__not-found'); // not found block
 const moreButton = document.querySelector('.result__button');
-const formError = document.querySelector('.form__error');
 const resultTitle = document.querySelector('.result__news-title-wrapper');
 const resultError = document.querySelector('.result__error');
 

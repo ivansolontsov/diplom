@@ -37,8 +37,8 @@ class NewsList {
         this.resultError.setAttribute('style', 'display: none'); // ошибка при запросе
         this.preloaderBlock.setAttribute('style', 'display: none'); // progress bar closed
 
-        sessionStorage.setItem('request', JSON.stringify(newsList)); // отправляем полученное в хранилище
-        sessionStorage.setItem('keyword', keyword);
+        localStorage.setItem('request', JSON.stringify(newsList)); // отправляем полученное в хранилище
+        localStorage.setItem('keyword', keyword);
 
         if (newsList.articles.length > 3) {
           this.moreNewsButton.setAttribute('style', 'display: block');
@@ -74,7 +74,7 @@ class NewsList {
         cards[cardNumber].url);
       this.container.appendChild(cardComponent.cardElement);
       cardNumber += 1;
-      sessionStorage.setItem('cardNumber', cardNumber); // отправляем количество открытых карточек в хранилище
+      localStorage.setItem('cardNumber', cardNumber); // отправляем количество открытых карточек в хранилище
     }
   }
   clear() {

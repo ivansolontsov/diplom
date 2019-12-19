@@ -38,9 +38,10 @@ class Analytics {
       analyticsTable[`${objectDates.getFullYear()}-${objectDates.getMonth() + 1}-${objectDates.getDate()}`] = 0;
       objectDates.setDate(objectDates.getDate() - 1);
     }
+
     this.request.articles.forEach(element => { // проверяем каждый заголовок и каждый текст на наличие совпадений
       let articleDate = new Date(element.publishedAt);
-      articleDate = `${articleDate.getFullYear()}-${articleDate.getMonth() + 1}-${articleDate.getDate()}`; // форматируем дату
+      articleDate = `${articleDate.getFullYear()}-${articleDate.getMonth() + 1}-${articleDate.getDate()}`; // форматируем дату, чтобы потом проще делать сравнения.
 
       if(element.title.match(regex)) { // если есть совпадение, записываем его в переменную, заносим в таблицу длину массива с совпадениями
         let titleMatches = element.title.match(regex);
