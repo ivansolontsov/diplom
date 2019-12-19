@@ -55,6 +55,7 @@ class CommitList {
           element.author.avatar_url);
         this.container.appendChild(commitComponent.commitElement);
       });
+      mySwiper.init();
     }).catch(err => {
       console.log(err);
     });
