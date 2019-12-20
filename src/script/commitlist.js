@@ -10,8 +10,9 @@ class CommitList {
     this.renderCommits();
   }
   renderCommits() {
+    const commitsLimit = 10;
     apiComponent.getCommits().then(commits => {
-      commits.slice(0,10).forEach(element => {
+      commits.slice(0,commitsLimit).forEach(element => {
         const commitComponent = new Commit(element.commit.author.name,
           element.commit.author.email,
           element.commit.author.date,

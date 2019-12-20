@@ -21,7 +21,7 @@ class Analytics {
   }
   matchInTitle(keyword) {
     let amountOfTitleMatches = 0;
-    let regex = new RegExp(keyword, 'gim');
+    const regex = new RegExp(keyword, 'gim');
     this.request.articles.forEach(element => {
       if(element.title.match(regex)) {
         amountOfTitleMatches += 1;
@@ -30,11 +30,12 @@ class Analytics {
     return amountOfTitleMatches;
   }
   analyticsByDays(keyword) {
-    let analyticsTable = new Object(); // объект для собирания в него аналмтики по каждой дате
-    let regex = new RegExp(keyword, 'gim'); // шаблон по ключевому слову
+    const analyticsTable = new Object(); // объект для собирания в него аналмтики по каждой дате
+    const regex = new RegExp(keyword, 'gim'); // шаблон по ключевому слову
 
-    let objectDates = new Date();
-    for (let index = 0; index < 7; index++) { // добавляем в объект даты за последние 7 дней, по формату совпадающие с датами из полученных данных
+    const objectDates = new Date();
+    const daysInWeeek = 7;
+    for (let index = 0; index < daysInWeek; index++) { // добавляем в объект даты за последние 7 дней, по формату совпадающие с датами из полученных данных
       analyticsTable[`${objectDates.getFullYear()}-${objectDates.getMonth() + 1}-${objectDates.getDate()}`] = 0;
       objectDates.setDate(objectDates.getDate() - 1);
     }
@@ -44,20 +45,20 @@ class Analytics {
       articleDate = `${articleDate.getFullYear()}-${articleDate.getMonth() + 1}-${articleDate.getDate()}`; // форматируем дату, чтобы потом проще делать сравнения.
 
       if(element.title.match(regex)) { // если есть совпадение, записываем его в переменную, заносим в таблицу длину массива с совпадениями
-        let titleMatches = element.title.match(regex);
+        const titleMatches = element.title.match(regex);
         if(titleMatches != null) {
           analyticsTable[articleDate] += titleMatches.length;
         }
       }
       if(element.description.match(regex)) {
-        let descriptionMatches = element.description.match(regex);
+        const descriptionMatches = element.description.match(regex);
         if(descriptionMatches != null) {
           analyticsTable[articleDate] += descriptionMatches.length;
         }
       }
     });
 
-    let days = new Date(); // дата для левого столбца в формате чт, 19
+    const days = new Date(); // дата для левого столбца в формате чт, 19
     const daysOptions = {
       day: 'numeric',
       weekday: 'short'

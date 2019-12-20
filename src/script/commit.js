@@ -18,18 +18,19 @@ class Commit {
   createCommit() {
     const commit =  document.createElement('div')
     commit.classList.add('swiper-slide');
-    commit.innerHTML = `
-    <div class="git__commit">
-    <time datetime="${this.date}" class="git__commit-date">${this.formatDate}</time>
-    <div class="git__commit-info">
-      <img src="${this.avatar}" alt="${this.name}" class="git__author-avatar">
-      <div class="git__author-name-wrapper">
-        <h3 class="git__author-name">${this.name}</h3>
-        <a href="mailto:${this.email}" class="git__author-email">${this.email}</a>
+    commit.insertAdjacentHTML('afterbegin', `
+      <div class="git__commit">
+      <time datetime="${this.date}" class="git__commit-date">${this.formatDate}</time>
+        <div class="git__commit-info">
+          <img src="${this.avatar}" alt="${this.name}" class="git__author-avatar">
+          <div class="git__author-name-wrapper">
+          <h3 class="git__author-name">${this.name}</h3>
+          <a href="mailto:${this.email}" class="git__author-email">${this.email}</a>
+        </div>
       </div>
-    </div>
-    <p class="git__commit-text">${this.text}</p>
-   </div>`;
+      <p class="git__commit-text">${this.text}</p>
+      </div>
+    `);
     return commit;
   }
 }
