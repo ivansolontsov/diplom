@@ -1,41 +1,33 @@
-import {Search} from './search.js';
-import {Api} from './api.js';
-import {Card} from './card.js';
-
-
-const formError = document.querySelector('.form__error');
-const searchForm = document.querySelector('.search__form'); // форма поиска
-
-
-const searchComponent = new Search(searchForm, formError);
-const apiComponent = new Api('2c22949ae7344b648fca6988958eda43');
-
 let cardNumber = 0;
 class NewsList {
-  constructor(newsContainer, moreNewsButton, notFoundBlock, preloaderBlock, mainContainer, resultError, mainContainerTitle, searchButton, searchForm) {
-    this.container = newsContainer;
-    this.moreNewsButton = moreNewsButton;
-    this.notFoundBlock = notFoundBlock;
-    this.preloaderBlock = preloaderBlock;
-    this.mainContainer = mainContainer;
-    this.resultError = resultError;
-    this.mainContainerTitle = mainContainerTitle;
-    this.searchButton = searchButton;
-    this.searchForm = searchForm;
+    constructor(config) {
+    this.container = config.newsContainer;
+    this.moreNewsButton = config.moreNewsButton;
+    this.notFoundBlock = config.notFoundBlock;
+    this.preloaderBlock = config.preloaderBlock;
+    this.mainContainer = config.mainContainer;
+    this.resultError = config.resultError;
+    this.mainContainerTitle = config.mainContainerTitle;
+    this.searchButton = config.searchButton;
+    this.searchForm = config.searchForm;
 
+    this.apiComponent = config.apiComponent;
+    this.searchComponent = config.searchComponent;
+    this.Card = config.Card;
+
+    const articlesPerColumn = 3;
+    this.articlesPerColumn = articlesPerColumn;
     this.moreNewsButton.addEventListener('click', () => {
-      this.addCards(this.cards, 3);
+      this.addCards(this.cards, articlesPerColumn);
     });
   }
   renderNews(keyword) {
-    if (searchComponent.validate() === false) {
+    if (this.searchComponent.validate() === false) {
       return false;
     }
-    apiComponent.getNews(keyword, this.notFoundBlock, this.preloaderBlock, this.mainContainer, this.searchButton, this.searchForm)
+    this.apiComponent.getNews(keyword, this.notFoundBlock, this.preloaderBlock, this.mainContainer, this.searchButton, this.searchForm)
       .then(newsList => {
         this.clear();
-
-        const articlesPerColumn = 3;
 
         this.searchForm.input.disabled = false;
         this.mainContainerTitle.setAttribute('style', 'display: flex'); // заголовок блока
@@ -46,13 +38,13 @@ class NewsList {
         localStorage.setItem('request', JSON.stringify(newsList)); // отправляем полученное в хранилище
         localStorage.setItem('keyword', keyword);
 
-        if (newsList.articles.length > articlesPerColumn) {
+        if (newsList.articles.length > this.articlesPerColumn) {
           this.moreNewsButton.setAttribute('style', 'display: block');
         } else
         this.moreNewsButton.setAttribute('style', 'display: none');
         if (newsList.totalResults != 0) {
           this.mainContainer.setAttribute('style', 'display: block');
-          this.addCards(newsList.articles, articlesPerColumn);
+          this.addCards(newsList.articles, this.articlesPerColumn);
         } else
           this.notFoundBlock.setAttribute('style', 'display: block');
     }).catch(err => {
@@ -74,7 +66,7 @@ class NewsList {
         this.moreNewsButton.setAttribute('style', 'display: none');
         break;
       }
-      const cardComponent = new Card(cards[cardNumber].urlToImage,
+      const cardComponent = new this.Card(cards[cardNumber].urlToImage,
         cards[cardNumber].publishedAt,
         cards[cardNumber].title,
         cards[cardNumber].description,

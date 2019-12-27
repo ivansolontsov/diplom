@@ -30,11 +30,11 @@ class Analytics {
     return amountOfTitleMatches;
   }
   analyticsByDays(keyword) {
-    const analyticsTable = new Object(); // объект для собирания в него аналмтики по каждой дате
+    const analyticsTable = new Object(); // объект для собирания в него аналмтики по каждой дате1
     const regex = new RegExp(keyword, 'gim'); // шаблон по ключевому слову
 
     const objectDates = new Date();
-    const daysInWeeek = 7;
+    const daysInWeek = 7;
     for (let index = 0; index < daysInWeek; index++) { // добавляем в объект даты за последние 7 дней, по формату совпадающие с датами из полученных данных
       analyticsTable[`${objectDates.getFullYear()}-${objectDates.getMonth() + 1}-${objectDates.getDate()}`] = 0;
       objectDates.setDate(objectDates.getDate() - 1);
@@ -43,6 +43,10 @@ class Analytics {
     this.request.articles.forEach(element => { // проверяем каждый заголовок и каждый текст на наличие совпадений
       let articleDate = new Date(element.publishedAt);
       articleDate = `${articleDate.getFullYear()}-${articleDate.getMonth() + 1}-${articleDate.getDate()}`; // форматируем дату, чтобы потом проще делать сравнения.
+
+      if(element.description === null || element.title === null) {
+        return false;
+      }
 
       if(element.title.match(regex)) { // если есть совпадение, записываем его в переменную, заносим в таблицу длину массива с совпадениями
         const titleMatches = element.title.match(regex);
