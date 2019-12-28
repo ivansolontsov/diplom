@@ -1,0 +1,9 @@
+.result__error {
+  display: none;
+  font-size: 18px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: red;
+  width: 50vh;
+  margin: auto;
+  text-align: center;
+}

@@ -5,6 +5,9 @@
   font-size: 14px;
   color: #1a1b22;
   text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
 }
 
 .git__author-email:hover {

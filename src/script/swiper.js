@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 
 let mySwiper = new Swiper ('.swiper-container', {
+  init: false,
   direction: 'horizontal',
   loop: false,
   pagination: {
